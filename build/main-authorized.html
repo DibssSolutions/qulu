@@ -1,0 +1,922 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Main - authorized</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+  </head>
+
+  <body>
+    <!-- BEGIN content -->
+    <div class="out">
+      <!-- begin header -->
+      <header class="header js-header">
+        <div class="header__inner inner">
+          <div class="header__wrap">
+            <div class="header__left">
+              <!-- begin logo -->
+              <a href="./index.html" class="logo">
+                <span class="logo__icons">
+                  <img src="./img/logo-icons.svg" alt="logo-icons">
+                </span>
+                <span class="logo__text">
+                  <img src="./img/logo-text.svg" alt="logo-text">
+                </span>
+              </a>
+              <!-- end logo -->
+            </div>
+            <nav class="header__nav nav js-nav">
+              <form action="#" class="nav__search nav-search js-nav-search">
+                <input type="text" class="nav-search__input" placeholder="Поиск по сайту">
+              </form>
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Инструкции</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Классы</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Конкурсы</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Вопрос-ответ</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Образование</a>
+                </li>
+              </ul>
+              <div class="nav__login login">
+                <div class="login__item"><a href="#" class="login__link">Вход</a></div>
+                <div class="login__item is-active"><a href="#" class="login__link">Регистрация</a></div>
+              </div>
+            </nav>
+            <div class="header__right">
+              <a href="#" class="btn btn_rad btn_bord-sm btn_md header__instruction">Новая Инструкция</a>
+              <!-- begin cabin -->
+              <div class="cabin js-cabin">
+                <div class="cabin__logo js-cabin-trigger" style="background-image: url(./img/neo.png);">
+                  <div class="cabin__has-info"></div>
+                </div>
+                <div class="cabin__drop">
+                  <svg class="icon icon-login-arrow">
+                    <use xlink:href="img/sprite.svg#icon-login-arrow"></use>
+                  </svg>
+                  <ul class="cabin__list">
+                    <li class="cabin__item is-active ">
+                      <a href="#" class="cabin__link"> Константин <span class="cabin__rating">4.81 <svg class="icon icon-star">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                          </svg>
+                        </span>
+                      </a>
+                    </li>
+                    <li class="cabin__item ">
+                      <a href="#" class="cabin__link"> Мой профиль </a>
+                    </li>
+                    <li class="cabin__item ">
+                      <a href="#" class="cabin__link"> Сообщения <span class="cabin__mess">(1)</span>
+                      </a>
+                    </li>
+                    <li class="cabin__item ">
+                      <a href="#" class="cabin__link"> Мои инструкции <span class="cabin__mess">(2)</span>
+                      </a>
+                    </li>
+                    <li class="cabin__item ">
+                      <a href="#" class="cabin__link"> Избранное </a>
+                    </li>
+                    <li class="cabin__item  is-logout">
+                      <a href="#" class="cabin__link"> Выйти </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- end cabin -->
+              <div class="header__search search">
+                <button class="search__button" type="button">
+                  <svg class="icon icon-search">
+                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </div>
+              <button class="btn-menu js-btn-menu" type="button">
+                <span class="btn-menu__line"></span>
+                <span class="btn-menu__line"></span>
+                <span class="btn-menu__line"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+      <!-- begin hero-slider -->
+      <div class="hero-slider js-hero-slider">
+        <div class="hero-slider__slide">
+          <div class="hero-slider__wrap" style="background-image: url(./img/slider-hero-img.jpg);">
+            <div class="hero-slider__inner inner">
+              <div class="hero-slider__label">Инструкция дня</div>
+              <h1 class="hero-slider__title title-lg">Моднейший стол1 <br> без единого гвоздя</h1>
+            </div>
+          </div>
+        </div>
+        <div class="hero-slider__slide">
+          <div class="hero-slider__wrap" style="background-image: url(./img/slider-hero-img.jpg);">
+            <div class="hero-slider__inner inner">
+              <div class="hero-slider__label">Инструкция дня</div>
+              <h1 class="hero-slider__title title-lg">Моднейший стол2 <br> без единого гвоздя</h1>
+            </div>
+          </div>
+        </div>
+        <div class="hero-slider__slide">
+          <div class="hero-slider__wrap" style="background-image: url(./img/slider-hero-img.jpg);">
+            <div class="hero-slider__inner inner">
+              <div class="hero-slider__label">Инструкция дня</div>
+              <h1 class="hero-slider__title title-lg">Моднейший стол3 <br> без единого гвоздя</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end hero-slider -->
+      <!-- begin popular -->
+      <div class="popular">
+        <div class="popular__inner inner">
+          <h2 class="popular__title-md title-md">🍜 Еда и напитки — новое</h2>
+          <div class="popular__slider slider js-slider">
+            <div class="slider__slide">
+              <!-- begin item -->
+              <div class="item">
+                <a href="#" class="item__out">
+                  <div class="item__img" style="background-image: url('./img/item-img.jpg')"></div>
+                  <div class="item__wrap">
+                    <div class="item__category">еда и напитки</div>
+                    <div class="item__title">Готовим вкусный шашлык на мангале из кирпичей</div>
+                  </div>
+                </a>
+                <div class="item__footer">
+                  <!-- begin like -->
+                  <label class="like">
+                    <input type="checkbox">
+                    <svg class="icon icon-heart-outline">
+                      <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                    </svg>
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <span class="like__quantity">18</span>
+                  </label>
+                  <!-- end like -->
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+            <div class="slider__slide">
+              <!-- begin item -->
+              <div class="item">
+                <a href="#" class="item__out">
+                  <div class="item__img" style="background-image: url('./img/item-img.jpg')"></div>
+                  <div class="item__wrap">
+                    <div class="item__category">еда и напитки</div>
+                    <div class="item__title">Легкий способ открыть вино без штопора и карандаша</div>
+                  </div>
+                </a>
+                <div class="item__footer">
+                  <!-- begin like -->
+                  <label class="like">
+                    <input type="checkbox">
+                    <svg class="icon icon-heart-outline">
+                      <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                    </svg>
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <span class="like__quantity">18</span>
+                  </label>
+                  <!-- end like -->
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+            <div class="slider__slide">
+              <!-- begin item -->
+              <div class="item">
+                <a href="#" class="item__out">
+                  <div class="item__img" style="background-image: url('./img/item-img.jpg')"></div>
+                  <div class="item__wrap">
+                    <div class="item__category">роботы</div>
+                    <div class="item__title">Как вывести биткоины на карту Сбербанка быстро, без комиссии и посредников</div>
+                  </div>
+                </a>
+                <div class="item__footer">
+                  <!-- begin like -->
+                  <label class="like">
+                    <input type="checkbox">
+                    <svg class="icon icon-heart-outline">
+                      <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                    </svg>
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <span class="like__quantity">18</span>
+                  </label>
+                  <!-- end like -->
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+            <div class="slider__slide">
+              <!-- begin item -->
+              <div class="item">
+                <a href="#" class="item__out">
+                  <div class="item__img" style="background-image: url('./img/item-img.jpg')"></div>
+                  <div class="item__wrap">
+                    <div class="item__category">авто-мото</div>
+                    <div class="item__title">Противоугонная система для Мазды 3 своими руками</div>
+                  </div>
+                </a>
+                <div class="item__footer">
+                  <!-- begin like -->
+                  <label class="like">
+                    <input type="checkbox">
+                    <svg class="icon icon-heart-outline">
+                      <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                    </svg>
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <span class="like__quantity">18</span>
+                  </label>
+                  <!-- end like -->
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+            <div class="slider__slide">
+              <!-- begin item -->
+              <div class="item">
+                <a href="#" class="item__out">
+                  <div class="item__img" style="background-image: url('./img/item-img.jpg')"></div>
+                  <div class="item__wrap">
+                    <div class="item__category">еда и напитки</div>
+                    <div class="item__title">Готовим вкусный шашлык на мангале из кирпичей</div>
+                  </div>
+                </a>
+                <div class="item__footer">
+                  <!-- begin like -->
+                  <label class="like">
+                    <input type="checkbox">
+                    <svg class="icon icon-heart-outline">
+                      <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                    </svg>
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <span class="like__quantity">18</span>
+                  </label>
+                  <!-- end like -->
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+            <div class="slider__slide">
+              <!-- begin item -->
+              <div class="item">
+                <a href="#" class="item__out">
+                  <div class="item__img" style="background-image: url('./img/item-img.jpg')"></div>
+                  <div class="item__wrap">
+                    <div class="item__category">еда и напитки</div>
+                    <div class="item__title">Легкий способ открыть вино без штопора и карандаша</div>
+                  </div>
+                </a>
+                <div class="item__footer">
+                  <!-- begin like -->
+                  <label class="like">
+                    <input type="checkbox">
+                    <svg class="icon icon-heart-outline">
+                      <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                    </svg>
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <span class="like__quantity">18</span>
+                  </label>
+                  <!-- end like -->
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+            <div class="slider__slide">
+              <!-- begin item -->
+              <div class="item">
+                <a href="#" class="item__out">
+                  <div class="item__img" style="background-image: url('./img/item-img.jpg')"></div>
+                  <div class="item__wrap">
+                    <div class="item__category">роботы</div>
+                    <div class="item__title">Как вывести биткоины на карту Сбербанка быстро, без комиссии и посредников</div>
+                  </div>
+                </a>
+                <div class="item__footer">
+                  <!-- begin like -->
+                  <label class="like">
+                    <input type="checkbox">
+                    <svg class="icon icon-heart-outline">
+                      <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                    </svg>
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <span class="like__quantity">18</span>
+                  </label>
+                  <!-- end like -->
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+            <div class="slider__slide">
+              <!-- begin item -->
+              <div class="item">
+                <a href="#" class="item__out">
+                  <div class="item__img" style="background-image: url('./img/item-img.jpg')"></div>
+                  <div class="item__wrap">
+                    <div class="item__category">авто-мото</div>
+                    <div class="item__title">Противоугонная система для Мазды 3 своими руками</div>
+                  </div>
+                </a>
+                <div class="item__footer">
+                  <!-- begin like -->
+                  <label class="like">
+                    <input type="checkbox">
+                    <svg class="icon icon-heart-outline">
+                      <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                    </svg>
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <span class="like__quantity">18</span>
+                  </label>
+                  <!-- end like -->
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end popular -->
+      <!-- begin top -->
+      <div class="top">
+        <div class="top__inner inner">
+          <h2 class="top__title-md title-md">Топ классов</h2>
+          <div class="top__row row">
+            <div class="top__col col-lg-4">
+              <!-- begin class -->
+              <a href="#" class="class" style="background-image: url('./img/class-mg-1.jpg');">
+                <div class="class__quantity">5294 Участника</div>
+                <div class="class__title">Выпекаем ништяки</div>
+              </a>
+              <!-- end class -->
+            </div>
+            <div class="top__col col-lg-4">
+              <!-- begin class -->
+              <a href="#" class="class" style="background-image: url('./img/class-mg-1.jpg');">
+                <div class="class__quantity">5294 Участника</div>
+                <div class="class__title">Выпекаем ништяки</div>
+              </a>
+              <!-- end class -->
+            </div>
+            <div class="top__col col-lg-4">
+              <!-- begin class -->
+              <a href="#" class="class" style="background-image: url('./img/class-mg-1.jpg');">
+                <div class="class__quantity">5294 Участника</div>
+                <div class="class__title">Выпекаем ништяки</div>
+              </a>
+              <!-- end class -->
+            </div>
+          </div>
+          <div class="top__footer">
+            <a href="#" class="btn btn_lg btn_bord-sm btn_bord-gray">все классы</a>
+          </div>
+        </div>
+      </div>
+      <!-- end top -->
+      <!-- begin popular -->
+      <div class="popular">
+        <div class="popular__inner inner">
+          <h2 class="popular__title-md title-md">🏡 Дом и быт — новое</h2>
+          <div class="popular__slider slider js-slider">
+            <div class="slider__slide">
+              <!-- begin item -->
+              <div class="item">
+                <a href="#" class="item__out">
+                  <div class="item__img" style="background-image: url('./img/item-img.jpg')"></div>
+                  <div class="item__wrap">
+                    <div class="item__category">еда и напитки</div>
+                    <div class="item__title">Готовим вкусный шашлык на мангале из кирпичей</div>
+                  </div>
+                </a>
+                <div class="item__footer">
+                  <!-- begin like -->
+                  <label class="like">
+                    <input type="checkbox">
+                    <svg class="icon icon-heart-outline">
+                      <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                    </svg>
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <span class="like__quantity">18</span>
+                  </label>
+                  <!-- end like -->
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+            <div class="slider__slide">
+              <!-- begin item -->
+              <div class="item">
+                <a href="#" class="item__out">
+                  <div class="item__img" style="background-image: url('./img/item-img.jpg')"></div>
+                  <div class="item__wrap">
+                    <div class="item__category">еда и напитки</div>
+                    <div class="item__title">Легкий способ открыть вино без штопора и карандаша</div>
+                  </div>
+                </a>
+                <div class="item__footer">
+                  <!-- begin like -->
+                  <label class="like">
+                    <input type="checkbox">
+                    <svg class="icon icon-heart-outline">
+                      <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                    </svg>
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <span class="like__quantity">18</span>
+                  </label>
+                  <!-- end like -->
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+            <div class="slider__slide">
+              <!-- begin item -->
+              <div class="item">
+                <a href="#" class="item__out">
+                  <div class="item__img" style="background-image: url('./img/item-img.jpg')"></div>
+                  <div class="item__wrap">
+                    <div class="item__category">роботы</div>
+                    <div class="item__title">Как вывести биткоины на карту Сбербанка быстро, без комиссии и посредников</div>
+                  </div>
+                </a>
+                <div class="item__footer">
+                  <!-- begin like -->
+                  <label class="like">
+                    <input type="checkbox">
+                    <svg class="icon icon-heart-outline">
+                      <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                    </svg>
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <span class="like__quantity">18</span>
+                  </label>
+                  <!-- end like -->
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+            <div class="slider__slide">
+              <!-- begin item -->
+              <div class="item">
+                <a href="#" class="item__out">
+                  <div class="item__img" style="background-image: url('./img/item-img.jpg')"></div>
+                  <div class="item__wrap">
+                    <div class="item__category">авто-мото</div>
+                    <div class="item__title">Противоугонная система для Мазды 3 своими руками</div>
+                  </div>
+                </a>
+                <div class="item__footer">
+                  <!-- begin like -->
+                  <label class="like">
+                    <input type="checkbox">
+                    <svg class="icon icon-heart-outline">
+                      <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                    </svg>
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <span class="like__quantity">18</span>
+                  </label>
+                  <!-- end like -->
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+            <div class="slider__slide">
+              <!-- begin item -->
+              <div class="item">
+                <a href="#" class="item__out">
+                  <div class="item__img" style="background-image: url('./img/item-img.jpg')"></div>
+                  <div class="item__wrap">
+                    <div class="item__category">еда и напитки</div>
+                    <div class="item__title">Готовим вкусный шашлык на мангале из кирпичей</div>
+                  </div>
+                </a>
+                <div class="item__footer">
+                  <!-- begin like -->
+                  <label class="like">
+                    <input type="checkbox">
+                    <svg class="icon icon-heart-outline">
+                      <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                    </svg>
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <span class="like__quantity">18</span>
+                  </label>
+                  <!-- end like -->
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+            <div class="slider__slide">
+              <!-- begin item -->
+              <div class="item">
+                <a href="#" class="item__out">
+                  <div class="item__img" style="background-image: url('./img/item-img.jpg')"></div>
+                  <div class="item__wrap">
+                    <div class="item__category">еда и напитки</div>
+                    <div class="item__title">Легкий способ открыть вино без штопора и карандаша</div>
+                  </div>
+                </a>
+                <div class="item__footer">
+                  <!-- begin like -->
+                  <label class="like">
+                    <input type="checkbox">
+                    <svg class="icon icon-heart-outline">
+                      <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                    </svg>
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <span class="like__quantity">18</span>
+                  </label>
+                  <!-- end like -->
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+            <div class="slider__slide">
+              <!-- begin item -->
+              <div class="item">
+                <a href="#" class="item__out">
+                  <div class="item__img" style="background-image: url('./img/item-img.jpg')"></div>
+                  <div class="item__wrap">
+                    <div class="item__category">роботы</div>
+                    <div class="item__title">Как вывести биткоины на карту Сбербанка быстро, без комиссии и посредников</div>
+                  </div>
+                </a>
+                <div class="item__footer">
+                  <!-- begin like -->
+                  <label class="like">
+                    <input type="checkbox">
+                    <svg class="icon icon-heart-outline">
+                      <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                    </svg>
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <span class="like__quantity">18</span>
+                  </label>
+                  <!-- end like -->
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+            <div class="slider__slide">
+              <!-- begin item -->
+              <div class="item">
+                <a href="#" class="item__out">
+                  <div class="item__img" style="background-image: url('./img/item-img.jpg')"></div>
+                  <div class="item__wrap">
+                    <div class="item__category">авто-мото</div>
+                    <div class="item__title">Противоугонная система для Мазды 3 своими руками</div>
+                  </div>
+                </a>
+                <div class="item__footer">
+                  <!-- begin like -->
+                  <label class="like">
+                    <input type="checkbox">
+                    <svg class="icon icon-heart-outline">
+                      <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                    </svg>
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <span class="like__quantity">18</span>
+                  </label>
+                  <!-- end like -->
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+          </div>
+          <div class="popular__footer">
+            <a href="#" class="btn btn_lg btn_bord-sm btn_bord-gray">новинки других категорий</a>
+          </div>
+        </div>
+      </div>
+      <!-- end popular -->
+      <!-- begin contest -->
+      <div class="contests">
+        <div class="contests__inner inner">
+          <h3 class="contests__title title-md">Конкурсы</h3>
+          <div class="contests__row row">
+            <div class="contests__col col-lg-6">
+              <a href="#" class="contest contest_blue">
+                <div class="contest__wrap">
+                  <div class="contest__label">Осталось 4 дня!</div>
+                  <div class="contest__bottom">
+                    <h3 class="contest__title title-md">Космическая одиссея 2018</h3>
+                    <div class="contest__prize">Главный приз — iPad Pro</div>
+                  </div>
+                </div>
+                <div class="contest__img">
+                  <img src="./img/contest-img-1.png" alt="img">
+                </div>
+              </a>
+            </div>
+            <div class="contests__col col-lg-6">
+              <a href="#" class="contest contest_brown">
+                <div class="contest__wrap">
+                  <div class="contest__label">Осталось 12 дней</div>
+                  <div class="contest__bottom">
+                    <h3 class="contest__title title-md">Кулинарный поединок</h3>
+                    <div class="contest__prize">12 призов</div>
+                  </div>
+                </div>
+                <div class="contest__img">
+                  <img src="./img/contest-img-2.png" alt="img">
+                </div>
+              </a>
+            </div>
+            <div class="contests__col col-lg-6">
+              <a href="#" class="contest contest_purple">
+                <div class="contest__wrap">
+                  <div class="contest__label">Осталось 26 дней</div>
+                  <div class="contest__bottom">
+                    <h3 class="contest__title title-md">Шансон-контест «Три аккорда»</h3>
+                    <div class="contest__prize">4 приза</div>
+                  </div>
+                </div>
+                <div class="contest__img">
+                  <img src="./img/contest-img-3.png" alt="img">
+                </div>
+              </a>
+            </div>
+            <div class="contests__col col-lg-6">
+              <a href="#" class="contest contest_light-blue">
+                <div class="contest__wrap">
+                  <div class="contest__label">Осталось 32 дня</div>
+                  <div class="contest__bottom">
+                    <h3 class="contest__title title-md">Экономный туризм</h3>
+                    <div class="contest__prize">12 призов</div>
+                  </div>
+                </div>
+                <div class="contest__img">
+                  <img src="./img/contest-img-4.png" alt="img">
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="contests__footer buttons-footer">
+            <a href="#" class="btn btn_lg btn_bord-sm btn_bord-gray">Смотреть все конкурсы</a>
+          </div>
+        </div>
+      </div>
+      <!-- end contest -->
+      <!-- begin сategories -->
+      <div class="categories">
+        <div class="categories__inner inner js-drop">
+          <h3 class="categories__title title-md">Категории</h3>
+          <div class="js-drop-wrap">
+            <div class="categories__row row js-drop-shows">
+              <div class="categories__col col-md-4">
+                <!-- begin category -->
+                <a href="#" class="category">
+                  <span class="category__name">Еда и напитки</span>
+                  <span class="category__img">
+                    <img src="./img/categories/car.png" alt="img">
+                  </span>
+                </a>
+                <!-- end category -->
+              </div>
+              <div class="categories__col col-md-4">
+                <!-- begin category -->
+                <a href="#" class="category">
+                  <span class="category__name">Авто-мото</span>
+                  <span class="category__img">
+                    <img src="./img/categories/car.png" alt="img">
+                  </span>
+                </a>
+                <!-- end category -->
+              </div>
+              <div class="categories__col col-md-4">
+                <!-- begin category -->
+                <a href="#" class="category">
+                  <span class="category__name">Образование</span>
+                  <span class="category__img">
+                    <img src="./img/categories/car.png" alt="img">
+                  </span>
+                </a>
+                <!-- end category -->
+              </div>
+            </div>
+            <div class="categories__row categories__row_sm-hide row js-drop-hidden">
+              <div class="categories__col col-md-4">
+                <!-- begin category -->
+                <a href="#" class="category">
+                  <span class="category__name">Техника</span>
+                  <span class="category__img">
+                    <img src="./img/categories/car.png" alt="img">
+                  </span>
+                </a>
+                <!-- end category -->
+              </div>
+              <div class="categories__col col-md-4">
+                <!-- begin category -->
+                <a href="#" class="category">
+                  <span class="category__name">Роботы</span>
+                  <span class="category__img">
+                    <img src="./img/categories/car.png" alt="img">
+                  </span>
+                </a>
+                <!-- end category -->
+              </div>
+              <div class="categories__col col-md-4">
+                <!-- begin category -->
+                <a href="#" class="category">
+                  <span class="category__name">Спорт и ЗОЖ</span>
+                  <span class="category__img">
+                    <img src="./img/categories/car.png" alt="img">
+                  </span>
+                </a>
+                <!-- end category -->
+              </div>
+              <div class="categories__col col-md-4">
+                <!-- begin category -->
+                <a href="#" class="category">
+                  <span class="category__name">Дом и быт</span>
+                  <span class="category__img">
+                    <img src="./img/categories/car.png" alt="img">
+                  </span>
+                </a>
+                <!-- end category -->
+              </div>
+              <div class="categories__col col-md-4">
+                <!-- begin category -->
+                <a href="#" class="category">
+                  <span class="category__name">Фотография</span>
+                  <span class="category__img">
+                    <img src="./img/categories/car.png" alt="img">
+                  </span>
+                </a>
+                <!-- end category -->
+              </div>
+              <div class="categories__col col-md-4">
+                <!-- begin category -->
+                <a href="#" class="category">
+                  <span class="category__name">Красота</span>
+                  <span class="category__img">
+                    <img src="./img/categories/car.png" alt="img">
+                  </span>
+                </a>
+                <!-- end category -->
+              </div>
+              <div class="categories__col col-md-4">
+                <!-- begin category -->
+                <a href="#" class="category">
+                  <span class="category__name">Музыка</span>
+                  <span class="category__img">
+                    <img src="./img/categories/car.png" alt="img">
+                  </span>
+                </a>
+                <!-- end category -->
+              </div>
+              <div class="categories__col col-md-4">
+                <!-- begin category -->
+                <a href="#" class="category">
+                  <span class="category__name">Хобби (крафт)</span>
+                  <span class="category__img">
+                    <img src="./img/categories/car.png" alt="img">
+                  </span>
+                </a>
+                <!-- end category -->
+              </div>
+              <div class="categories__col col-md-4">
+                <!-- begin category -->
+                <a href="#" class="category">
+                  <span class="category__name">Игры</span>
+                  <span class="category__img">
+                    <img src="./img/categories/car.png" alt="img">
+                  </span>
+                </a>
+                <!-- end category -->
+              </div>
+            </div>
+          </div>
+          <div class="categories__footer buttons-footer">
+            <button class="btn btn_lg btn_bord-sm btn_bord-gray js-open-drop" type="button" data-text-open="все категории" data-text-close="СВЕРНУТЬ">
+              <span class="js-drop-btn-text"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- end сategories -->
+      <!-- begin footer -->
+      <div class="footer">
+        <div class="footer__inner inner">
+          <div class="footer__top row">
+            <div class="footer__left col-md-6">
+              <div class="footer__title">E-mail рассылка</div>
+              <div class="footer__text">Оставь свой адрес e-mail и получи доступ к еженедельной рассылке лучших инструкций и новостей WikiRuki:</div>
+              <!-- begin subscribe -->
+              <form class="footer__subscribe subscribe">
+                <div class="subscribe__input">
+                  <input type="text" placeholder="Ваш e-mail">
+                </div>
+                <button class="subscribe__btn" type="button">ОТПРАВИТЬ <svg class="icon icon-arr-right">
+                    <use xlink:href="img/sprite.svg#icon-arr-right"></use>
+                  </svg>
+                </button>
+              </form>
+              <!-- end subscribe -->
+            </div>
+            <div class="footer__right col-md-6" data-accordion-group>
+              <div class="footer__row row">
+                <div class="footer__col col-md-4" data-accordion-item data-accordion-open data-accordion-on-init="768">
+                  <div class="footer__group">
+                    <div class="footer__title" data-accordion-trigger>Портал</div>
+                    <ul class="footer__list" data-accordion-container>
+                      <li class="footer__item"><a href="#" class="footer__link">Инструкции</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Классы</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Конкурсы</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Вопрос-ответ</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Образование</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer__col col-md-4" data-accordion-item data-accordion-on-init="768">
+                  <div class="footer__group">
+                    <div class="footer__title" data-accordion-trigger>О нас</div>
+                    <ul class="footer__list" data-accordion-container>
+                      <li class="footer__item"><a href="#" class="footer__link">Что такое WikiRuki?</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Сотрудничество</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Вакансии</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Часто задаваемые вопросы</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer__col col-md-4" data-accordion-item data-accordion-on-init="768">
+                  <div class="footer__group">
+                    <div class="footer__title" data-accordion-trigger>Мы в соцсетях</div>
+                    <ul class="footer__list" data-accordion-container>
+                      <li class="footer__item"><a href="#" class="footer__link">Вконтакте</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Facebook</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Youtube</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Instagram</a></li>
+                      <li class="footer__item"><a href="#" class="footer__link">Pinterest</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__copy">
+              <a href="#" class="footer__logo logo-sm">
+                <img src="./img/logo-sm.svg" alt="img">
+              </a>
+              <div class="copy">Copyright WikiRuki &copy; 2018</div>
+            </div>
+            <div class="footer__policy">
+              <a href="#" class="footer__link">Пользовательское соглашение</a>
+              <a href="#" class="footer__link">Политика конфиденциальности</a>
+              <a href="#" class="footer__link">Термины и положения</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end footer -->
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+
+</html>

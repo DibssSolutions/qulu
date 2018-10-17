@@ -1,0 +1,7 @@
+ProjectTitle: template
+
+PageList:
+- file: main-no-authorized.html
+  ready: 100
+- file: main-authorized.html
+  ready: 100

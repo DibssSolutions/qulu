@@ -1,0 +1,27 @@
+body
+	font-family: $roboto
+	+f(16px,400,1.5)
+	letter-spacing: -0.007em
+	color: $emperor 
+	background: $white
+
+// colors
+.color-dark
+	color: $dark 
+.color-blue
+	color: $blue 
+
+.md-show
+	display: none !important
+	+md
+		display: block !important
+.md-hide
+	display: block !important
+	+md
+		display: none !important
+
+.buttons-footer
+	margin-top: 40px 
+	text-align: center
+	+md
+		margin-top: 25px

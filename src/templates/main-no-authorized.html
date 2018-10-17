@@ -1,0 +1,15 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{{ header.block() }}
+	{% include "./partials/home/_hero.html" %}
+	{% include "./partials/home/_popular.html" %}
+	{% include "./partials/home/_top.html" %}
+	{% include "./partials/home/_instructions.html" %}
+	{% include "./partials/home/_сategories.html" %}
+
+{% endblock %}
