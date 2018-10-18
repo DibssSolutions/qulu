@@ -5,3 +5,5 @@ PageList:
   ready: 100
 - file: main-authorized.html
   ready: 100
+- file: test.html
+  ready: 50
