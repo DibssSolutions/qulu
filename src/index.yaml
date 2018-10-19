@@ -9,3 +9,5 @@ PageList:
   ready: 50
 - file: select-category.html
   ready: 100
+- file: general-info.html
+  ready: 100
