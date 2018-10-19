@@ -1,0 +1,39 @@
+.bootstrap-tagsinput
+	padding: 10px 16px
+	background-color: $white
+	border: 1px solid $gallery
+	
+.tag
+	position: relative
+	display: inline-block
+	padding: 10px 39px 10px 12px
+	background-color: $gallery
+	border-radius: 14px
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1)
+	font-size: 14px
+	line-height: 1.42
+	&:not(:first-child)
+		margin-left: 8px
+	&_img
+		[data-role="remove"]
+			display: none
+		.overlay
+			display: block
+	[data-role="remove"]
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		right: 13px
+		width: 10px
+
+.tt-suggestion
+	&:hover
+		background-color: rgba($blue,.08)
+		color: $emperor
+
+.overlay
+	display: none
+	input
+		position: absolute
+		opacity: 0
+		visibility: hidden

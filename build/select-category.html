@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Template</title>
+    <title>Main - authorized</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
@@ -11,12 +11,73 @@
     <link rel="stylesheet" media="all" href="css/app.css">
   </head>
 
-  <body>
+  <body class="is-gray">
     <!-- BEGIN content -->
     <div class="out">
-      <input type="text" value="Amsterdam,Washington" data-role="tagsinput">
-      <br><br><br>
-      <input type="text" data-role="tagsinput-img">
+      <!-- begin header -->
+      <header class="header js-header header_static">
+        <div class="header__inner inner">
+          <div class="header__wrap">
+            <div class="header__left">
+              <!-- begin logo -->
+              <a href="./index.html" class="logo">
+                <span class="logo__icons">
+                  <img src="./img/logo-icons.svg" alt="logo-icons">
+                </span>
+                <span class="logo__text">
+                  <img src="./img/logo-text.svg" alt="logo-text">
+                </span>
+              </a>
+              <!-- end logo -->
+            </div>
+            <nav class="header__nav nav js-nav">
+              <form action="#" class="nav__search nav-search js-nav-search">
+                <input type="text" class="nav-search__input" placeholder="Поиск по сайту">
+              </form>
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Инструкции</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Классы</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Конкурсы</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Вопрос-ответ</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Образование</a>
+                </li>
+              </ul>
+              <div class="nav__login login">
+                <div class="login__item"><a href="#" class="login__link">Вход</a></div>
+                <div class="login__item is-active"><a href="#" class="login__link">Регистрация</a></div>
+              </div>
+            </nav>
+            <div class="header__right">
+              <div class="header__login login">
+                <div class="login__item"><a href="#" class="login__link">Вход</a></div>
+                <div class="login__item is-active"><a href="#" class="login__link">Регистрация</a></div>
+              </div>
+              <div class="header__search search">
+                <button class="search__button" type="button">
+                  <svg class="icon icon-search">
+                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </div>
+              <button class="btn-menu js-btn-menu" type="button">
+                <span class="btn-menu__line"></span>
+                <span class="btn-menu__line"></span>
+                <span class="btn-menu__line"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
       <!-- begin footer -->
       <div class="footer">
         <div class="footer__inner inner">
