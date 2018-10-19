@@ -28,21 +28,21 @@ bodyClass: is-gray
 				}
 			]
 		}) }}
-		<div class="wrap">
-			<div class="inner inner_md">
-				<!-- begin classes -->
-				<div class="classes">
-					{% for text in ['Еда и напитки 🍜', 'Авто-мото 🚘', 'Образование 🎓', 'Техника 🛠', 'Роботы 🤖', 'Спорт и ЗОЖ 🚴🏻', 'Дом и быт 🏡', 'Фотография 📸', 'Красота 💁🏼', 'Музыка 🎹', 'Хобби (крафт) 🙌🏼', 'Игры 🎲'] %}
-					<div class="classes__item">
-						{{ mixins.categ({
-							text: text
-						}) }}
-					</div>
-					{% endfor %}
+	</div>
+	<div class="wrap">
+		<div class="inner inner_md">
+			<!-- begin classes -->
+			<div class="classes">
+				{% for text in ['Еда и напитки 🍜', 'Авто-мото 🚘', 'Образование 🎓', 'Техника 🛠', 'Роботы 🤖', 'Спорт и ЗОЖ 🚴🏻', 'Дом и быт 🏡', 'Фотография 📸', 'Красота 💁🏼', 'Музыка 🎹', 'Хобби (крафт) 🙌🏼', 'Игры 🎲'] %}
+				<div class="classes__item">
+					{{ mixins.categ({
+						text: text
+					}) }}
 				</div>
-				<!-- end classes -->
-				
+				{% endfor %}
 			</div>
+			<!-- end classes -->
+			
 		</div>
 	</div>
 
