@@ -88,4 +88,10 @@
 {% endmacro %}
 
 {% macro categ(props) %}
+	<!-- begin categ -->
+	<label class="categ">
+		<input type="radio" name="{{ props.name or 'radio' }}">
+		<span class="categ__text">{{ props.text }}</span>
+	</label>
+	<!-- end categ -->
 {% endmacro %}
