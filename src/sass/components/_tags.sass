@@ -1,12 +1,14 @@
 .bootstrap-tagsinput
-	height: 60px
-	padding: 10px 16px
+	min-height: 62px
+	padding: 10px 16px 10px
 	background-color: $white
 	border: 1px solid $gallery
 	display: flex
 	align-items: center
+	flex-wrap: wrap
 .twitter-typeahead
 	width: 100%
+	line-height: 1
 .tag
 	position: relative
 	display: inline-block
@@ -17,8 +19,7 @@
 	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1)
 	font-size: 14px
 	line-height: 1.43
-	&:not(:first-child)
-		margin-left: 8px
+	margin: 5px 8px 2px 0
 	&_img
 		padding-right: 48px
 		[data-role="remove"]
@@ -44,10 +45,18 @@
 		color: $emperor
 .tt-input
 	width: 100%
+	font-size: 16px
+	letter-spacing: -0.1px
+	color: #3f3f3f
+	+placeholder
+		color: rgba($emperor, .5)
 .is-filled
+	padding: 4px 16px 9px
 	.tt-input
 		+placeholder
 			font-size: 0
+	.twitter-typeahead
+		width: 80px
 
 .overlay
 	display: none

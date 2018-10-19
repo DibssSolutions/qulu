@@ -165,7 +165,18 @@ $('[data-role="tagsinput"]').on('itemAdded', function(event) {
 $('[data-role="tagsinput-img"]').on('itemAdded', function(event) {
   $(this).parent().find('.bootstrap-tagsinput').addClass('is-filled');
 });
-let tags = $('.bootstrap-tagsinput').find('.tag');
-if (tags.length) {
-  console.log(121212121212);
-}
+$('[data-role="tagsinput"]').on('itemRemoved', function(event) {
+  const parent = $(this).parent();
+  let tags = parent.find('.tag');
+  if (!tags.length) {
+    parent.find('.bootstrap-tagsinput').removeClass('is-filled');
+  };
+});
+
+$('[data-role="tagsinput-img"]').on('itemRemoved', function(event) {
+  const parent = $(this).parent();
+  let tags = parent.find('.tag');
+  if (!tags.length) {
+    parent.find('.bootstrap-tagsinput').removeClass('is-filled');
+  };
+});
