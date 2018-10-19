@@ -4,3 +4,4 @@ import './_menu';
 import './_cabin';
 import './_drop';
 import './_tags';
+import './_previewFile';
