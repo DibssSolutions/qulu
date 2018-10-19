@@ -81,7 +81,7 @@
 <!-- begin steps -->
 <ul class="steps">
 	{% for item in props.list %}
-	<li class="steps__item{% if item.active %} is-active{% endif %}"><a href="#" class="steps__link">{{ item.text }}</a></li>
+	<li class="steps__item{% if item.class %} {{ item.class }}{% endif %}"><span class="steps__text">{{ item.text }}</span></li>
 	{% endfor %}
 </ul>
 <!-- end steps -->

@@ -1,0 +1,22 @@
+.steps
+	margin: 0 -4px 45px
+	display: flex
+	&__item
+		padding: 0 4px
+		flex: 0 0 25% 
+		font-family: $walsheim 
+		+f(18px,400,1)
+		max-width: 25%
+		color: rgba($emperor, .3) 
+		&.is-active
+			color: $blue 
+		&.is-check
+			color: $emperor
+	&__text
+		position: relative
+		padding: 10px 0
+		user-select: none
+		color: inherit 
+		line-height: 1
+		border-bottom: 2px solid
+		display: block
