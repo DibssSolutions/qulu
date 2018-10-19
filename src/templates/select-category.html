@@ -10,5 +10,24 @@ bodyClass: is-gray
 		static: true
 	}) }}
 
-{% endblock %}
+	<div class="inner">
+		{{ mixins.steps({
+			list: [
+				{
+					active: true,
+					text: '1. Выберите категорию'
+				},
+				{
+					text: '2. Общая информация'
+				},
+				{
+					text: '3. Опишите шаги'
+				},
+				{
+					text: '4. Проверка и публикация'
+				}
+			]
+		}) }}
+	</div>
 
+{% endblock %}

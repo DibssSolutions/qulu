@@ -77,3 +77,15 @@
 <!-- end category -->
 {% endmacro %}
 
+{% macro steps(props) %}
+<!-- begin steps -->
+<ul class="steps">
+	{% for item in props.list %}
+	<li class="steps__item{% if item.active %} is-active{% endif %}"><a href="#" class="steps__link">{{ item.text }}</a></li>
+	{% endfor %}
+</ul>
+<!-- end steps -->
+{% endmacro %}
+
+{% macro categ(props) %}
+{% endmacro %}
