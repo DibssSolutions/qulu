@@ -1,8 +1,12 @@
 .bootstrap-tagsinput
+	height: 60px
 	padding: 10px 16px
 	background-color: $white
 	border: 1px solid $gallery
-	
+	display: flex
+	align-items: center
+.twitter-typeahead
+	width: 100%
 .tag
 	position: relative
 	display: inline-block
@@ -29,10 +33,21 @@
 	.icon
 		display: block
 
+.tt-menu
+	padding: 0
+	border: none
+	border-radius: 2px
+	box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.14)
 .tt-suggestion
 	&:hover
 		background-color: rgba($blue,.08)
 		color: $emperor
+.tt-input
+	width: 100%
+.is-filled
+	.tt-input
+		+placeholder
+			font-size: 0
 
 .overlay
 	display: none
@@ -42,6 +57,7 @@
 	right: 2px
 	bottom: 2px
 	z-index: 1
+	cursor: pointer
 	&:hover
 		.overlay-bg,
 		.overlay-img
