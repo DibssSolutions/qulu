@@ -159,3 +159,13 @@ $('[data-role="tagsinput-img"]').tagsinput({
     source: citynames.ttAdapter()
   }
 });
+$('[data-role="tagsinput"]').on('itemAdded', function(event) {
+  $(this).parent().find('.bootstrap-tagsinput').addClass('is-filled');
+});
+$('[data-role="tagsinput-img"]').on('itemAdded', function(event) {
+  $(this).parent().find('.bootstrap-tagsinput').addClass('is-filled');
+});
+let tags = $('.bootstrap-tagsinput').find('.tag');
+if (tags.length) {
+  console.log(121212121212);
+}

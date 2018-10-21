@@ -5,3 +5,4 @@ import './_cabin';
 import './_drop';
 import './_tags';
 import './_previewFile';
+import './_checkInput';
