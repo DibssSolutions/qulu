@@ -39,12 +39,12 @@
 		<input type="text" data-role="tagsinput-img" placeholder="Инструменты (опционально)">
 	</div>
 	<div class="general-form__row">
-		<div class="general-form__col">
+		<div class="general-form__col col-md-6 col-sm-12">
 			<div class="form-control">
 				<input type="text" class="input" placeholder="Финансовые затраты, &#8381">
 			</div>
 		</div>
-		<div class="general-form__col">
+		<div class="general-form__col col-md-6 col-sm-12">
 			<div class="form-control">
 				<input type="text" class="input" placeholder="Затраты по времени, ч">
 			</div>
@@ -52,10 +52,11 @@
 	</div>
 	<div class="general-form__control form-control">
 		<div class="general-form__wrap">
-			{{ mixins.checkbox(
+			{{ mixins.checkboxRadio(
 				{
 					text: "Возрастное ограничение:",
-					jsHook: "js-age-limit"
+					jsHook: "js-age-limit",
+					class: "radio"
 				}
 			) }}
 			<div class="general-form__select js-age-limit-select">

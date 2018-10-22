@@ -41,20 +41,36 @@ bodyClass: is-gray
 						<input type="text" class="step__input input input_lg" value="Подготовка" placeholder="Назовите шаг">
 					</div>
 					<div class="form-control">
-						<div class="form-field" contenteditable="true">
+						<div class="form-info" style="top: 140px; left: 100%;">Выделите текст, чтобы увидеть все возможности его редактирования.</div>
+						<div class="form-field" contenteditable="true" placeholder="Начните писать...">
 							<h4>Узнать, как правильно доить корову, нельзя без определенной подготовки. Дойка начинается с массажа. Его начинают с верхней части, постепенно продвигаясь к соскам.</h4>
 							<p>Непосредственно перед дойкой вымя нужно вымыть водой с хозяйственным мылом (рисунок 1). Такой раствор поможет размягчить соски, очистить их от грязи. Вода не должна быть слишком теплой, чтобы молоко не свернулось. После мытья вымя вытирают чистым сухим полотенцем. Руки тоже нужно тщательно вымыть с мылом, а при аппаратной дойке – продезинфицировать устройство.</p>
-							<div class="img-block js-img-block">
-								<div class="img-block__overlay js-img-block-overlay"></div>
-								<div class="img-block__wrap" contenteditable="false">
-									<div class="img-block__note">2. Добавьте примечание</div>
-									<div class="img-block__controls">
-										<button class="img-block__control btn-control js-edit-img" type="button">{{ mixins.icon('edit') }}</button>
-										<button class="img-block__control btn-control js-remove-img" type="button">{{ mixins.icon('remove') }}</button>
+							<div class="img-wrap">
+								<div class="img-block js-img-block">
+									<div class="img-block__overlay js-img-block-overlay"></div>
+									<button class="img-block__close js-img-block-close" type="button" contenteditable="false">закрыть</button>
+									<div class="img-block__wrap" contenteditable="false">
+										<div class="img-block__note">2. Добавьте примечание</div>
+										<div class="img-block__controls">
+											<button class="img-block__control btn-control js-edit-img" type="button">{{ mixins.icon('edit') }}</button>
+											<button class="img-block__control btn-control js-remove-img" type="button">{{ mixins.icon('remove') }}</button>
+										</div>
+										<div class="img-block__point point js-point" style="top: 40%; left: 25%;">
+											<buttton class="point__trigger js-point-trigger" type="button"></buttton>
+											<div class="point__drop js-point-drop">
+												<div class="point__input">
+													<input type="text" placeholder="Опишите, что тут важно">
+												</div>
+												<div class="point__footer">
+													<button class="point__btn js-point-remove" type="button">УДАЛИТЬ</button>
+													<button class="point__btn point__btn_blue" type="button">СОХРАНИТЬ</button>
+												</div>
+											</div>
+										</div>
+										<img src="./img/cow.jpg" alt="cow">
 									</div>
-									<img src="./img/cow.jpg" alt="cow">
+									<div class="img-block__label">Рисунок 1. Подбираемся поближе</div>
 								</div>
-								<div class="img-block__label">Рисунок 1. Подбираемся поближе</div>
 							</div>
 							<p>Такой раствор поможет размягчить соски, очистить их от грязи. Вода не должна быть слишком теплой, чтобы молоко не свернулось. После мытья вымя вытирают чистым сухим полотенцем. Руки тоже нужно тщательно вымыть с мылом, а при аппаратной дойке – продезинфицировать устройство.</p>
 						</div>
@@ -70,7 +86,8 @@ bodyClass: is-gray
 						<input type="text" class="step__input input input_lg" value="Техника доения" placeholder="Назовите шаг">
 					</div>
 					<div class="form-control">
-						<div class="form-field" contenteditable="true">
+						<div class="form-info" style="top: 820px; left: 100%;">Нажмите, чтобы выбрать фото. Выберите несколько файлов, чтобы добавить фотогалерею</div>
+						<div class="form-field" contenteditable="true" placeholder="Начните писать...">
 							<h4>Чтобы узнать, как правильно доить корову руками, нужно сделать следующее:</h4>
 							<ol>
 								<li>Правильно захватить сосок можно так: расположить все пальцы на соске, чтобы указательный находился под большим, а мизинец – с наружной части соска;</li>
@@ -79,25 +96,59 @@ bodyClass: is-gray
 								<li>После этого кулак разжимают, но пальцы с соска не убирают.</li>
 								<li>Когда начинается сжатие безымянного пальца и мизинца, остальные пальцы следует сжать, чтобы молоко не пошло вверх. Далее алгоритм действий повторяется.</li>
 							</ol>
-							<div class="img-block">
-								<div class="img-block__row row">
-									<div class="img-block__col col-md-6">
-										<div class="img-block__wrap">
-											<div class="img-block__controls">
-												<button class="img-block__control btn-control js-edit-img" type="button">{{ mixins.icon('edit') }}</button>
-												<button class="img-block__control btn-control js-remove-img" type="button">{{ mixins.icon('remove') }}</button>
+							<div class="img-wrap">
+								<div class="img-wrap__row row">
+									<div class="img-wrap__col col-md-6">
+										<div class="img-block js-img-block">
+											<div class="img-block__overlay js-img-block-overlay"></div>
+											<button class="img-block__close js-img-block-close" type="button" contenteditable="false">закрыть</button>
+											<div class="img-block__wrap" contenteditable="false">
+												<div class="img-block__note">2. Добавьте примечание</div>
+												<div class="img-block__controls">
+													<button class="img-block__control btn-control js-edit-img" type="button">{{ mixins.icon('edit') }}</button>
+													<button class="img-block__control btn-control js-remove-img" type="button">{{ mixins.icon('remove') }}</button>
+												</div>
+												<div class="img-block__point point js-point" style="top: 40%; left: 25%;">
+													<buttton class="point__trigger js-point-trigger" type="button"></buttton>
+													<div class="point__drop js-point-drop">
+														<div class="point__input">
+															<input type="text" placeholder="Опишите, что тут важно">
+														</div>
+														<div class="point__footer">
+															<button class="point__btn js-point-remove" type="button">УДАЛИТЬ</button>
+															<button class="point__btn point__btn_blue" type="button">СОХРАНИТЬ</button>
+														</div>
+													</div>
+												</div>
+												<img src="./img/cow.jpg" alt="cow">
 											</div>
-											<img src="./img/cow.jpg" alt="cow">
 											<div class="img-block__label">Рисунок 2. Доение с аппаратом</div>
 										</div>
 									</div>
-									<div class="img-block__col col-md-6">
-										<div class="img-block__wrap">
-											<div class="img-block__controls">
-												<button class="img-block__control btn-control js-edit-img" type="button">{{ mixins.icon('edit') }}</button>
-												<button class="img-block__control btn-control js-remove-img" type="button">{{ mixins.icon('remove') }}</button>
+									<div class="img-wrap__col col-md-6">
+										<div class="img-block js-img-block">
+											<div class="img-block__overlay js-img-block-overlay"></div>
+											<button class="img-block__close js-img-block-close" type="button" contenteditable="false">закрыть</button>
+											<div class="img-block__wrap" contenteditable="false">
+												<div class="img-block__note">2. Добавьте примечание</div>
+												<div class="img-block__controls">
+													<button class="img-block__control btn-control js-edit-img" type="button">{{ mixins.icon('edit') }}</button>
+													<button class="img-block__control btn-control js-remove-img" type="button">{{ mixins.icon('remove') }}</button>
+												</div>
+												<div class="img-block__point point js-point" style="top: 40%; left: 25%;">
+													<buttton class="point__trigger js-point-trigger" type="button"></buttton>
+													<div class="point__drop js-point-drop">
+														<div class="point__input">
+															<input type="text" placeholder="Опишите, что тут важно">
+														</div>
+														<div class="point__footer">
+															<button class="point__btn js-point-remove" type="button">УДАЛИТЬ</button>
+															<button class="point__btn point__btn_blue" type="button">СОХРАНИТЬ</button>
+														</div>
+													</div>
+												</div>
+												<img src="./img/cow.jpg" alt="cow">
 											</div>
-											<img src="./img/cow.jpg" alt="cow">
 											<div class="img-block__label img-block__label_no-edit">Добавьте описание…</div>
 										</div>
 									</div>
@@ -108,6 +159,20 @@ bodyClass: is-gray
 								&nbsp;
 							</p>
 						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end step -->
+			<!-- begin step -->
+			<div class="step">
+				<div class="step__inner inner inner_sm">
+					<div class="step__control form-control">
+						<label class="form-control__label form-control__label_lg">Шаг 3.</label>
+						<input type="text" class="step__input input input_lg" placeholder="Назовите шаг">
+					</div>
+					<div class="form-control">
+						<div class="form-info" style="top: 820px; left: 100%;">Нажмите, чтобы выбрать фото. Выберите несколько файлов, чтобы добавить фотогалерею</div>
+						<div class="form-field" contenteditable="true" placeholder="Начните писать..."></div>
 					</div>
 				</div>
 			</div>

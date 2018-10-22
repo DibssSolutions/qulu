@@ -22,6 +22,9 @@
 		transition: opacity .3s, visibility .3s
 		&:not(:first-child)
 			margin-left: 16px
+			+xs
+				margin-left: 0
+				margin-top: 10px
 		&.is-show
 			opacity: 1
 			visibility: visible
@@ -41,6 +44,8 @@
 			position: absolute
 			opacity: 0
 			visibility: hidden
+		.cover.is-result &
+			min-height: 430px
 	&__img
 		position: absolute
 		left: 0
@@ -64,13 +69,14 @@
 				bottom: 0
 				right: 0
 				background-color: rgba($black,.6)
-	&__bg,
-	&__placeholder
+		.cover.is-result &
+			background-image: url(../img/cow-upload.jpg)
+			border-radius: 4px
+	&__bg
 		position: absolute
 		z-index: -1
 		left: 50%
 		transform: translateX(-50%)
-	&__bg
 		top: 40px
 		width: 180px
 		height: 100px
@@ -78,11 +84,16 @@
 		background-repeat: no-repeat
 		background-size: cover
 	&__placeholder
+		position: absolute
+		z-index: -1
 		text-transform: uppercase
 		font-size: 11px
 		letter-spacing: 0.6px
 		color: rgba(#3f3f3f, .5)
 		bottom: 20px
+		left: 10px
+		right: 10px
+		text-align: center
 	&__btn-wrap
 		position: absolute
 		width: 100%
@@ -110,6 +121,10 @@
 		padding: 0
 		border: none
 		box-shadow: none
+	&.is-result
+		padding: 0
+		border: none
+		box-shadow: none
 
 
 
@@ -128,12 +143,31 @@
 		transform: translateY(-50%)
 		text-transform: uppercase
 		white-space: nowrap
+		+md
+			position: relative
+			top: 0
+			right: 0
+			transform: translateY(0)
+			padding-right: 0
+			margin-bottom: 10px
+			display: block
+
 		&_lg
 			padding-right: 20px
 			font-family: $walsheim
 			+f(36px,500,1.1)
 			text-transform: initial
 			color: $boulder 
+			+lg
+				position: relative
+				top: 0
+				right: 0
+				transform: translateY(0)
+				padding-right: 0
+				margin-bottom: 10px
+				display: block
+			+sm
+				font-size: 28px 
 		&_top
 			top: 23px
 
@@ -162,6 +196,11 @@
 		font-size: 36px
 		font-weight: 500
 		color: $boulder
+		+sm
+			font-size: 26px
+		+xs
+			font-size: 20px
+		
 .textarea
 	height: 172px
 	resize: none
@@ -175,6 +214,9 @@
 	padding: 19px 30px 40px
 	background-color: $white 
 	min-height: 340px
+	+sm
+		padding: 15px
+		min-height: 150px
 	h4
 		font-family: $roboto 
 	p, ol, ul
@@ -190,31 +232,59 @@
 		list-style-type: decimal
 	ul
 		list-style-type: disc 
-	
-.img-block
-	position: relative
+
+.form-info
+	position: absolute
+	margin-left: 20px
+	padding-left: 15px
+	font-size: 11px
+	color: rgba(#3F3F3F, .5) 
+	width: 224px
+	&:before
+		position: absolute
+		content: "—" 
+		top: 2px
+		left: 0
+		line-height: 1
+	+lg
+		margin-left: 10px
+	+md
+		display: none
+
+.img-wrap
 	margin: 40px 0
+	+sm
+		margin: 20px 0
 	&:first-child
 		margin-top: 0
 	&:last-child
 		margin-bottom: 0
+	&__col
+		&:not(:first-child)
+			+sm
+				margin-top: 20px
+
+	
+.img-block
+	position: relative
+	user-select: none
 	img
 		max-width: 100%
 		display: block
 	&__wrap
 		position: relative
-		z-index: 10
 		+hover
 			.img-block__controls
 				opacity: 1
 				visibility: visible
+		.img-block.is-edit &
+			z-index: 10
 	&__overlay
 		position: fixed
 		top: 0
 		left: 0
 		right: 0
 		bottom: 0
-		z-index: 10
 		opacity: 0
 		cursor: pointer
 		visibility: hidden
@@ -223,6 +293,7 @@
 		.img-block.is-edit &
 			opacity: 1
 			visibility: visible
+			z-index: 10
 	&__label
 		margin-top: 16px
 		text-align: center
@@ -261,12 +332,104 @@
 		margin-bottom: 10px
 		+f(18px,500,1.2)
 		color: $emperor 
+		pointer-events: none
 		opacity: 0
 		visibility: hidden
 		transition: opacity .3s, visibility .3s
 		.img-block.is-edit &
 			opacity: 1
 			visibility: visible
+	&__point
+		opacity: 0
+		visibility: hidden
+		transition: opacity .3s, visibility .3s
+		.img-block.is-edit &
+			opacity: 1
+			visibility: visible
+	&__close
+		position: absolute
+		z-index: 10
+		top: 50%
+		transform: translateY(-50%)
+		left: 100%
+		color: $emperor
+		font-family: $roboto 
+		+f(14px,400,1.4) 
+		margin-left: 75px
+		pointer-events: none
+		cursor: pointer
+		text-transform: uppercase
+		opacity: 0
+		visibility: hidden
+		transition: opacity .3s, visibility .3s
+		background-color: transparent 
+		+lg
+			top: auto
+			left: auto
+			right: 0
+			bottom: 100%
+			transform: translateY(0)
+			margin-bottom: 10px
+		.img-block.is-edit &
+			opacity: 1
+			visibility: visible
+
+.point
+	position: absolute
+	z-index: 1
+	&__trigger
+		width: 24px
+		height: 24px
+		cursor: pointer
+		border-radius: 50% 
+		border: 4px solid $white
+		background-color: $blue 
+		display: inline-block
+	&__drop
+		position: absolute
+		left: 0
+		top: 100%
+		padding: 15px 15px 10px
+		margin-top: 8px
+		width: 300px
+		background-color: $white
+		border: 1px solid #ECECEC
+		border-radius: 8px
+		visibility: hidden
+		transition: opacity .3s, visibility .3s
+		background-color: $white
+		.point.is-open &
+			opacity: 1
+			visibility: visible
+		.point.is-top-pos &
+			margin: 0 0 8px
+	&__input
+		input
+			height: 20px
+			width: 100%
+			font-family: $roboto
+			+f(14px,400,1.4) 
+			color: $emperor 
+			background-color: transparent
+			&::placeholder 
+				color: rgba($emperor, .3) 
+	&__footer
+		margin-top: 17px
+		font-size: 0
+		text-align: right
+	&__btn
+		font-family: $roboto
+		font-size: 14px
+		color: rgba($emperor, .5) 
+		letter-spacing: 0
+		line-height:  1.4
+		display: inline-block
+		vertical-align: top
+		background-color: transparent 
+		&:not(:first-child)
+			margin-left: 12px
+		&_blue
+			color: $blue 
 		
 .btn-control
 	position: relative
@@ -291,7 +454,7 @@
 	.icon-remove
 		font-size: 15px
 
-.checkbox
+.radio
 	position: relative
 	display: inline-block
 	line-height: 1.88
@@ -325,7 +488,7 @@
 		position: absolute
 		opacity: 0
 		visibility: hidden
-		&:checked ~ .checkbox__text
+		&:checked ~ .radio__text
 			&:after
 				opacity: 1
 				visibility: visible
@@ -346,7 +509,7 @@
 		font-weight: 400
 		+md
 			font-size: 16px
-			padding: 17px 47px
+			padding: 17px 16px 17px 16px
 		&:focus
 			outline: none!important
 		&:not(:disabled):active

@@ -29,6 +29,15 @@
 <!-- end input -->
 {% endmacro %}
 
+{% macro checkboxRadio(props) %}
+<!-- begin input -->
+<label class="{% if props.class %} {{ props.class }}{% endif %}">
+	<input type="checkbox" {%if props.jsHook %} class="{{props.jsHook}}"{% endif %} name="{{ props.name or 'checkbox' }}"{% if props.checked %} checked{% endif %}>
+	<span class="{% if props.class %}{{ props.class }}{% endif %}__text">{{ props.text or 'checkbox' }}</span>
+</label>
+<!-- end input -->
+{% endmacro %}
+
 {% macro like(props) %}
 <!-- begin like -->
 <label class="like{% if props.class %} {{ props.class }}{% endif %}">
