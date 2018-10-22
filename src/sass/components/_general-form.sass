@@ -160,6 +160,50 @@
 		.img-block.is-edit &
 			opacity: 1
 			visibility: visible
+
+.point
+	position: absolute
+	z-index: 1
+	&__trigger
+		width: 24px
+		height: 24px
+		border-radius: 50% 
+		border: 4px solid $white
+		background-color: $blue 
+		display: inline-block
+	&__drop
+		position: absolute
+		left: 0
+		top: 100%
+		padding: 15px 15px 10px
+		margin-top: 8px
+		background-color: $white
+		border: 1px solid #ECECEC
+		border-radius: 8px
+	&__input
+		input
+			height: 20px
+			width: 100%
+			font-family: $roboto
+			+f(14px,400,1.4) 
+			color: $emperor 
+			background-color: transparent
+			&::placeholder 
+				color: rgba($emperor, .3) 
+	&__footer
+		margin-top: 10px
+	&__btn
+		font-family: $roboto
+		font-size: 14px
+		color: rgba($emperor, .5) 
+		letter-spacing: 0
+		line-height:  1.4
+		display: inline-block
+		vertical-align: top
+		&:not(:first-child)
+			margin-left: 12px
+		&_blue
+			color: $blue 
 		
 .btn-control
 	position: relative

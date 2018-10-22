@@ -46,11 +46,24 @@ bodyClass: is-gray
 							<p>Непосредственно перед дойкой вымя нужно вымыть водой с хозяйственным мылом (рисунок 1). Такой раствор поможет размягчить соски, очистить их от грязи. Вода не должна быть слишком теплой, чтобы молоко не свернулось. После мытья вымя вытирают чистым сухим полотенцем. Руки тоже нужно тщательно вымыть с мылом, а при аппаратной дойке – продезинфицировать устройство.</p>
 							<div class="img-block js-img-block">
 								<div class="img-block__overlay js-img-block-overlay"></div>
+								<div class="img-block__close js-img-block-close">закрыть</div>
 								<div class="img-block__wrap" contenteditable="false">
 									<div class="img-block__note">2. Добавьте примечание</div>
 									<div class="img-block__controls">
 										<button class="img-block__control btn-control js-edit-img" type="button">{{ mixins.icon('edit') }}</button>
 										<button class="img-block__control btn-control js-remove-img" type="button">{{ mixins.icon('remove') }}</button>
+									</div>
+									<div class="point js-point" style="top: 40%; left: 25%;">
+										<buttton class="point__trigger js-point-trigger" type="button"></buttton>
+										<div class="point__drop js-point-drop">
+											<div class="point__input">
+												<input type="text" placeholder="Опишите, что тут важно">
+											</div>
+											<div class="point__footer">
+												<button class="point__btn js-point-remove" type="button">УДАЛИТЬ</button>
+												<button class="point__btn point__btn_blue" type="button">СОХРАНИТЬ</button>
+											</div>
+										</div>
 									</div>
 									<img src="./img/cow.jpg" alt="cow">
 								</div>
