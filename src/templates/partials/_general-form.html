@@ -5,19 +5,26 @@
 	</div>
 	<div class="general-form__control form-control">
 		<label class="form-control__label">обложка</label>
-		<label class="cover">
-			<input type="file">
-			<span class="cover__btn-wrap">
-				<button class="btn btn_sm btn_bord-white cover__btn" type="button">удалить обложку</button>
-				<button class="btn btn_sm btn_bord-white cover__btn" type="button">выбрать другой файл</button>
-			</span>
-			<span class="cover__img"></span>
-			<span class="cover__bg"></span>
-		</label>
+		<div class="cover">
+			<label class="cover__label">
+				<input type="file">
+				<span class="cover__img"></span>
+				<span class="cover__bg"></span>
+				<span class="cover__placeholder">обложка (перетащите сюда фото или видео)</span>
+			</label>
+			<div class="cover__btn-wrap">
+				<div class="cover__btn">
+					<button class="btn btn_sm btn_bord-white cover__btn" type="button">удалить обложку</button>
+				</div>
+				<div class="cover__btn">
+					<button class="btn btn_sm btn_bord-white cover__btn" type="button">выбрать другой файл</button>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="general-form__control form-control">
 		<label class="form-control__label">описание</label>
-		<textarea id="" cols="30" rows="10" class="input textarea general-form__textarea"></textarea>
+		<textarea class="input textarea general-form__textarea" placeholder="Описание (кратко)"></textarea>
 	</div>
 	<div class="general-form__control form-control">
 		<label class="form-control__label">теги</label>
@@ -44,14 +51,22 @@
 		</div>
 	</div>
 	<div class="general-form__control form-control">
-		{{ mixins.checkbox(
-			{
-				text: "Возрастное ограничение:"
-			}
-		) }}
-
+		<div class="general-form__wrap">
+			{{ mixins.checkbox(
+				{
+					text: "Возрастное ограничение:",
+					jsHook: "js-age-limit"
+				}
+			) }}
+			<div class="general-form__select js-age-limit-select">
+				<select class="form-control select js-select" title="Выберите ограничение">
+					<option value="1">16+</option>
+					<option value="2">18+</option>
+				</select>
+			</div>
+		</div>
 	</div>
-	<div class="general-form__submit">
+	<div class="general-form__submit form-control">
 		<button type="submit" class="btn btn_wide" disabled>далее</button>
 	</div>
 
