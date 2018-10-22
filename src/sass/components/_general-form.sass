@@ -5,16 +5,15 @@
 		flex-wrap: wrap
 		margin: 20px -10px 0
 	&__col
-		position: relative
 		padding: 0 10px
-		flex-basis: 0
-		flex-grow: 1
-		max-width: 100%
-		min-height: 1px
-		width: 100%
+		&:not(:first-child)
+			+sm
+				margin-top: 20px
 	&__wrap
 		display: flex
 		align-items: center
+		+xs
+			flex-direction: column
 	&__select
 		max-width: 248px
 		width: 100%
@@ -51,8 +50,20 @@
 		background-size: cover
 		background-position: center
 		background-repeat: no-repeat
+		display: block
+		border-radius: 6px
+		overflow: hidden
+		border: 1px solid $gallery
 		.cover.is-filled &
 			background-image: url(../img/cow-upload.jpg)
+			&:before
+				content: ""
+				position: absolute
+				left: 0
+				top: 0
+				bottom: 0
+				right: 0
+				background-color: rgba($black,.6)
 	&__bg,
 	&__placeholder
 		position: absolute
@@ -74,16 +85,31 @@
 		bottom: 20px
 	&__btn-wrap
 		position: absolute
+		width: 100%
 		left: 50%
 		top: 50%
 		transform: translate(-50%,-50%)
 		display: flex
 		justify-content: center
+		opacity: 0
+		visibility: hidden
+		transition: opacity .3s, visibility .3s
+		z-index: 5
+		+xs
+			flex-direction: column
+			align-items: center
+			max-width: 250px
+		.cover.is-filled &
+			opacity: 1
+			visibility: visible
 	&__btn
-		&:not(:first-child)
-			margin-left: 20px
+		margin: 0 10px
+		+xs
+			margin: 10px 0
 	&.is-filled
 		padding: 0
+		border: none
+		box-shadow: none
 
 
 
@@ -108,6 +134,8 @@
 			+f(36px,500,1.1)
 			text-transform: initial
 			color: $boulder 
+		&_top
+			top: 23px
 
 .input
 	height: 60px
@@ -137,6 +165,7 @@
 .textarea
 	height: 172px
 	resize: none
+	box-shadow: 0 6px 8px 0 rgba($black,.1)
 
 [contenteditable=true]:empty:before
 	content: attr(placeholder)
@@ -315,6 +344,9 @@
 		text-transform: none
 		color: #3f3f3f
 		font-weight: 400
+		+md
+			font-size: 16px
+			padding: 17px 47px
 		&:focus
 			outline: none!important
 		&:not(:disabled):active
@@ -331,6 +363,7 @@
 			border-left: 7px solid transparent
 			vertical-align: middle
 		.filter-option
+			padding: 19px 31px 20px 16px
 			// padding-left: 24px
 			// +sm
 			// 	padding-left: 15px
@@ -341,11 +374,11 @@
 			font-weight: 400
 			color: rgba($emperor,.5)
 			letter-spacing: normal
-			+sm
-				padding-left: 15px
-				padding-right: 13px
-				font-size: 14px
-				line-height: 1.3
+			// +sm
+			// 	padding-left: 15px
+			// 	padding-right: 13px
+			// 	font-size: 14px
+			// 	line-height: 1.3
 			.filter-option-inner
 				padding: 0
 	&.show

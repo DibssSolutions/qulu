@@ -2,11 +2,10 @@ import { SHOW } from '../constants';
 
 const select = '.js-age-limit-select';
 const input = $('.js-age-limit');
-
-input.on('change', function() {
-  const targetSelect = $(this).parent().siblings(select);
+const showSelect = el => {
+  const targetSelect = el.parent().siblings(select);
   if (targetSelect.length) {
-    if ($(this).prop('checked')) {
+    if (el.is(':checked')) {
     // $(this).parents('.checkbox').addClass('checked');
       targetSelect.addClass(SHOW);
     }
@@ -18,4 +17,8 @@ input.on('change', function() {
   else {
     console.error("There is no neighbor element '.js-age-limit-select' ");
   }
+};
+showSelect(input);
+input.on('change', function() {
+  showSelect($(this));
 });
