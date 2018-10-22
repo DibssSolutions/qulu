@@ -30,6 +30,7 @@
 	position: relative
 	border-radius: 4px
 	box-shadow: 0 6px 8px 0 rgba($black, .1)
+	border: 1px solid $gallery
 	overflow: hidden
 	background-color: $white
 	&__label
@@ -47,6 +48,11 @@
 		top: 0
 		bottom: 0
 		right: 0
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		.cover.is-filled &
+			background-image: url(../img/cow-upload.jpg)
 	&__bg,
 	&__placeholder
 		position: absolute
@@ -76,6 +82,9 @@
 	&__btn
 		&:not(:first-child)
 			margin-left: 20px
+	&.is-filled
+		padding: 0
+
 
 
 .form-control
