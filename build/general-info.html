@@ -88,64 +88,66 @@
         </ul>
         <!-- end steps -->
       </div>
-      <div class="inner inner_sm">
-        <form class="general-form">
-          <div class="general-form__control form-control">
-            <label class="general-form__label">название</label>
-            <input type="text" class="input input_lg" placeholder="Название Инструкции">
-          </div>
-          <div class="general-form__control form-control">
-            <label class="general-form__label">обложка</label>
-            <label class="cover">
-              <input type="file">
-              <span class="cover__btn-wrap">
-                <button class="btn btn_sm btn_bord-white cover__btn" type="button">удалить обложку</button>
-                <button class="btn btn_sm btn_bord-white cover__btn" type="button">выбрать другой файл</button>
-              </span>
-              <span class="cover__img"></span>
-              <span class="cover__bg"></span>
-            </label>
-          </div>
-          <div class="general-form__control form-control">
-            <label class="general-form__label">описание</label>
-            <textarea id="" cols="30" rows="10" class="input textarea general-form__textarea"></textarea>
-          </div>
-          <div class="general-form__control form-control">
-            <label class="general-form__label">теги</label>
-            <input type="text" data-role="tagsinput" placeholder="Ключевые, слова, через, запятую (необязательно)">
-          </div>
-          <div class="general-form__control form-control">
-            <label class="general-form__label">материалы</label>
-            <input type="text" data-role="tagsinput-img" placeholder="Материалы (опционально)">
-          </div>
-          <div class="general-form__control form-control">
-            <label class="general-form__label">инструменты</label>
-            <input type="text" data-role="tagsinput-img" placeholder="Инструменты (опционально)">
-          </div>
-          <div class="general-form__row">
-            <div class="general-form__col">
-              <div class="form-control">
-                <input type="text" class="input" placeholder="Финансовые затраты, &#8381">
+      <div class="wrap">
+        <div class="inner inner_sm">
+          <form class="general-form">
+            <div class="general-form__control form-control">
+              <label class="form-control__label">название</label>
+              <input type="text" class="input input_lg" placeholder="Название Инструкции">
+            </div>
+            <div class="general-form__control form-control">
+              <label class="form-control__label">обложка</label>
+              <label class="cover">
+                <input type="file">
+                <span class="cover__btn-wrap">
+                  <button class="btn btn_sm btn_bord-white cover__btn" type="button">удалить обложку</button>
+                  <button class="btn btn_sm btn_bord-white cover__btn" type="button">выбрать другой файл</button>
+                </span>
+                <span class="cover__img"></span>
+                <span class="cover__bg"></span>
+              </label>
+            </div>
+            <div class="general-form__control form-control">
+              <label class="form-control__label">описание</label>
+              <textarea id="" cols="30" rows="10" class="input textarea general-form__textarea"></textarea>
+            </div>
+            <div class="general-form__control form-control">
+              <label class="form-control__label">теги</label>
+              <input type="text" data-role="tagsinput" placeholder="Ключевые, слова, через, запятую (необязательно)">
+            </div>
+            <div class="general-form__control form-control">
+              <label class="form-control__label">материалы</label>
+              <input type="text" data-role="tagsinput-img" placeholder="Материалы (опционально)">
+            </div>
+            <div class="general-form__control form-control">
+              <label class="form-control__label">инструменты</label>
+              <input type="text" data-role="tagsinput-img" placeholder="Инструменты (опционально)">
+            </div>
+            <div class="general-form__row">
+              <div class="general-form__col">
+                <div class="form-control">
+                  <input type="text" class="input" placeholder="Финансовые затраты, &#8381">
+                </div>
+              </div>
+              <div class="general-form__col">
+                <div class="form-control">
+                  <input type="text" class="input" placeholder="Затраты по времени, ч">
+                </div>
               </div>
             </div>
-            <div class="general-form__col">
-              <div class="form-control">
-                <input type="text" class="input" placeholder="Затраты по времени, ч">
-              </div>
+            <div class="general-form__control form-control">
+              <!-- begin input -->
+              <label class="checkbox">
+                <input type="checkbox" name="checkbox">
+                <span class="checkbox__text">Возрастное ограничение:</span>
+              </label>
+              <!-- end input -->
             </div>
-          </div>
-          <div class="general-form__control form-control">
-            <!-- begin input -->
-            <label class="radio">
-              <input type="radio" name="checkbox">
-              <span class="radio__text">Возрастное ограничение:</span>
-            </label>
-            <!-- end input -->
-          </div>
-          <div class="general-form__submit">
-            <button type="submit" class="btn btn_wide" disabled>далее</button>
-          </div>
-        </form>
+            <div class="general-form__submit">
+              <button type="submit" class="btn btn_wide" disabled>далее</button>
+            </div>
+          </form>
+        </div>
       </div>
       <!-- begin footer -->
       <div class="footer">

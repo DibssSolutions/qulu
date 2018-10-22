@@ -1,10 +1,10 @@
 <form class="general-form">
 	<div class="general-form__control form-control">
-		<label class="general-form__label">название</label>
+		<label class="form-control__label">название</label>
 		<input type="text" class="input input_lg" placeholder="Название Инструкции">
 	</div>
 	<div class="general-form__control form-control">
-		<label class="general-form__label">обложка</label>
+		<label class="form-control__label">обложка</label>
 		<label class="cover">
 			<input type="file">
 			<span class="cover__btn-wrap">
@@ -16,19 +16,19 @@
 		</label>
 	</div>
 	<div class="general-form__control form-control">
-		<label class="general-form__label">описание</label>
+		<label class="form-control__label">описание</label>
 		<textarea id="" cols="30" rows="10" class="input textarea general-form__textarea"></textarea>
 	</div>
 	<div class="general-form__control form-control">
-		<label class="general-form__label">теги</label>
+		<label class="form-control__label">теги</label>
 		<input type="text" data-role="tagsinput" placeholder="Ключевые, слова, через, запятую (необязательно)">
 	</div>
 	<div class="general-form__control form-control">
-		<label class="general-form__label">материалы</label>
+		<label class="form-control__label">материалы</label>
 		<input type="text" data-role="tagsinput-img" placeholder="Материалы (опционально)">
 	</div>
 	<div class="general-form__control form-control">
-		<label class="general-form__label">инструменты</label>
+		<label class="form-control__label">инструменты</label>
 		<input type="text" data-role="tagsinput-img" placeholder="Инструменты (опционально)">
 	</div>
 	<div class="general-form__row">
@@ -46,7 +46,6 @@
 	<div class="general-form__control form-control">
 		{{ mixins.checkbox(
 			{
-				radio: true,
 				text: "Возрастное ограничение:"
 			}
 		) }}

@@ -6,3 +6,4 @@ import './_drop';
 import './_tags';
 import './_previewFile';
 import './_checkInput';
+import './_img-block';

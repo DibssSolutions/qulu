@@ -1,18 +1,5 @@
 .general-form
-	&__control
-		position: relative
-		&:not(:first-child)
-			margin-top: 20px
 	&__label
-		position: absolute
-		font-size: 11px
-		color: #3f3f3f
-		letter-spacing: 0.6px
-		padding-right: 15px
-		right: 100%
-		top: 50%
-		transform: translateY(-50%)
-		text-transform: uppercase
 	&__row
 		display: flex
 		flex-wrap: wrap
@@ -26,6 +13,28 @@
 		min-height: 1px
 		width: 100%
 
+
+.form-control
+	position: relative
+	&:not(:first-child)
+		margin-top: 20px
+	&__label
+		position: absolute
+		font-size: 11px
+		color: #3f3f3f
+		letter-spacing: 0.01em
+		padding-right: 15px
+		right: 100%
+		top: 50%
+		transform: translateY(-50%)
+		text-transform: uppercase
+		white-space: nowrap
+		&_lg
+			padding-right: 20px
+			font-family: $walsheim
+			+f(36px,500,1.1)
+			text-transform: initial
+			color: $boulder 
 
 .input
 	height: 60px
@@ -50,3 +59,127 @@
 		font-size: 36px
 		font-weight: 500
 		color: $boulder
+
+[contenteditable=true]:empty:before
+	content: attr(placeholder)
+	color: rgba(#555, .5) 
+	display: block
+.form-field
+	padding: 19px 30px 40px
+	background-color: $white 
+	min-height: 340px
+	h4
+		font-family: $roboto 
+	p, ol, ul
+		&:not(:first-child)
+			margin-top: 20px
+	ol, ul
+		padding-left: 25px 
+		li
+			padding-left: 10px
+			&:not(:first-child)
+				margin-top: 20px
+	ol
+		list-style-type: decimal
+	ul
+		list-style-type: disc 
+	
+.img-block
+	position: relative
+	margin: 40px 0
+	&:first-child
+		margin-top: 0
+	&:last-child
+		margin-bottom: 0
+	img
+		max-width: 100%
+		display: block
+	&__wrap
+		position: relative
+		z-index: 10
+		+hover
+			.img-block__controls
+				opacity: 1
+				visibility: visible
+	&__overlay
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		z-index: 10
+		opacity: 0
+		cursor: pointer
+		visibility: hidden
+		transition: visibility .3s, opacity .3s
+		background-color: rgba($white,.9) 
+		.img-block.is-edit &
+			opacity: 1
+			visibility: visible
+	&__label
+		margin-top: 16px
+		text-align: center
+		font-size: 11px
+		line-height: 1.1
+		font-size: 11px
+		color: #3F3F3F
+		text-transform: uppercase
+		letter-spacing: 0.01em
+		display: block
+		transition: opacity .3s, visibility .3s
+		.img-block.is-edit &
+			opacity: 0
+			visibility: hidden
+		&_no-edit
+			color: rgba(#3F3F3F,.5) 
+	&__controls
+		position: absolute
+		top: 14px
+		right: 14px
+		font-size: 0
+		opacity: 0
+		visibility: hidden
+		transition: opacity .3s, visibility .3s
+		.img-block.is-edit &
+			opacity: 0 !important
+			visibility: hidden !important
+	&__control
+		&:not(:first-child)
+			margin-left: 8px
+	&__note
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 100%
+		margin-bottom: 10px
+		+f(18px,500,1.2)
+		color: $emperor 
+		opacity: 0
+		visibility: hidden
+		transition: opacity .3s, visibility .3s
+		.img-block.is-edit &
+			opacity: 1
+			visibility: visible
+		
+.btn-control
+	position: relative
+	width: 44px
+	height: 44px
+	text-align: center
+	line-height: 44px
+	vertical-align: top
+	border-radius: 14px
+	background-color: $white 
+	display: inline-block
+	.icon
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+		font-size: 18px
+		line-height: 1
+		color: $dark 
+	.icon-edit
+		font-size: 22px 
+	.icon-remove
+		font-size: 15px
