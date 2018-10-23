@@ -173,7 +173,8 @@ bodyClass: is-gray
 								</div>
 							</article>
 							<div class="article__footer">
-								<button class="btn btn_wide btn_white btn_bord-sm" type="submit">добавить шаг</button>
+								<button class="btn btn_wide btn_white btn_bord-sm" type="submit" disabled>опубликовать инструкцию</button>
+								<div class="article__confirm">{{ mixins.checkbox({ text: 'Я согласен с условиями <a href="#">пользовательского соглашения</a>' }) }}</div>
 							</div>
 						</div>
 						<div class="article__sidebar col-md-4">
