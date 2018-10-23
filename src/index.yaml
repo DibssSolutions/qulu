@@ -15,5 +15,5 @@ PageList:
   ready: 100
 - file: edit-steps.html
   ready: 100
-- file: check.html
-  ready: 50
+- file: сheck.html
+  ready: 100
