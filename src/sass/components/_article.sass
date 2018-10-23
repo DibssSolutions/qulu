@@ -1,4 +1,53 @@
+.article-field
+	padding: 19px 30px 40px
+	background-color: $white 
+	border: 1px solid #ECECEC 
+	min-height: 340px
+	+sm
+		padding: 15px
+		min-height: 150px
+	h3
+		&:not(:first-child)
+			margin-top: 90px 
+		&:not(:last-child)
+			margin-bottom: 40px 
+	h5
+		font-family: $roboto 
+		font-size: 16px
+	p, ol, ul
+		&:not(:first-child)
+			margin-top: 20px
+	ol, ul
+		padding-left: 25px 
+		li
+			padding-left: 10px
+			&:not(:first-child)
+				margin-top: 20px
+	ol
+		list-style-type: decimal
+	ul
+		list-style-type: disc 
+	h3, h5, p, ol, ul
+		position: relative
+		z-index: 1
+		+hover
+			.edit-block
+				opacity: 1
+				visibility: visible
+	&__wrap
+		padding-left: 94px
+		
+.block-step
+	padding-right: 5px
+	min-width: 94px
+	display: inline-block
+
 .article
+	&__row
+		&:not(:first-child)
+			margin-top: 30px
+	&__field
+		padding: 40px 75px 60px 60px
 	&__aside
 	&__sidebar
 
