@@ -58,6 +58,9 @@
 		padding: 40px 75px 60px 60px
 		+md
 			padding: 19px 30px 40px
+		&_lg
+			padding: 40px 80px 60px
+			border: none
 	&__footer
 		margin-top: 40px 
 	&__confirm
@@ -102,18 +105,39 @@
 		z-index: -1
 	&_lg
 		padding: 110px 80px 33px
+		min-height: 520px
+		+md
+			padding-top: 74px
+		+sm
+			padding-top: 74px
 	&__head
 		flex: 1 0 auto
 	&__footer
 		flex: 0 0 auto
 		&-wrap
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-top: 12px
+			+xs
+				flex-direction: column
+				align-items: flex-start
 	&__topic
 		color: $white
+	&__info-blocks
+		display: flex
+		color: $white
+		+xs
+			margin-bottom: 12px
+		.info-block
+			&:not(:first-child)
+				margin-left: 20px
+				+lg
+					margin-left: 20px
 
 .author
 	display: flex
 	align-items: center
-	margin-top: 12px
 	&__img
 		background-size: cover
 		background-position: center
@@ -150,6 +174,9 @@
 		&_blue
 			background-color: $blue
 			color: $white
+		&_white
+			background-color: $white
+			color: $dark
 	&__text
 		font-size: 14px
 		&:not(:first-child)

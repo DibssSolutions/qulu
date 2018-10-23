@@ -134,15 +134,19 @@ const citynames = new Bloodhound({
 });
 $('[data-role="tagsinput"]').on('itemAddedOnInit', function(event) {
   const parent = $(this).parent();
+  const field = parent.find('.tt-input');
   let tags = parent.find('.tag');
   if (tags.length) {
+    field.addClass('no-remove');
     parent.find('.bootstrap-tagsinput').addClass('is-filled');
   };
 });
 $('[data-role="tagsinput-img"]').on('itemAddedOnInit', function(event) {
   const parent = $(this).parent();
+  const field = parent.find('.tt-input');
   let tags = parent.find('.tag');
   if (tags.length) {
+    field.addClass('no-remove');
     parent.find('.bootstrap-tagsinput').addClass('is-filled');
   };
 });
