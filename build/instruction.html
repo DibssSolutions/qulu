@@ -210,44 +210,24 @@
             </article>
           </div>
           <div class="article__sidebar col-lg-4">
-            <div class="sidebar">
-              <div class="sidebar__top">
-                <div class="info-block">
-                  <div class="info-block__icon info-block__icon_blue">
-                    <svg class="icon icon-l">
-                      <use xlink:href="img/sprite.svg#icon-l"></use>
-                    </svg>
-                  </div>
-                  <div class="info-block__text">1 час</div>
-                </div>
-                <div class="info-block">
-                  <div class="info-block__icon info-block__icon_blue">
-                    <svg class="icon icon-ruble">
-                      <use xlink:href="img/sprite.svg#icon-ruble"></use>
-                    </svg>
-                  </div>
-                  <div class="info-block__text">~ 450 ₽</div>
-                </div>
-                <div class="info-block">
-                  <div class="info-block__icon info-block__icon_blue">
-                    <svg class="icon icon-exclamation">
-                      <use xlink:href="img/sprite.svg#icon-exclamation"></use>
-                    </svg>
-                  </div>
-                  <div class="info-block__text">14+</div>
-                </div>
-              </div>
-              <div class="sidebar__block">
-                <span class="edit-block edit-block_sidebar js-edit-block">
-                  <button class="edit-block__btn js-edit-block-trigger" type="button">
-                    <svg class="icon icon-edit">
-                      <use xlink:href="img/sprite.svg#icon-edit"></use>
-                    </svg>
-                  </button>
-                </span>
-                <div class="inner sidebar__inner">
-                  <div class="sidebar__title"> Материалы: </div>
+            <div class="sidebar sidebar_noborder">
+              <div class="inner sidebar__inner">
+                <div class="sidebar__block">
+                  <div class="sidebar__title"> Материалы и Инструменты: </div>
                   <div class="sidebar__tags">
+                    <span class="tag tag_img"> Травка зеленая <span>
+                        <label class="overlay">
+                          <span class="overlay-img"></span>
+                          <span class="overlay-svg">
+                            <svg class="icon icon-photo">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-photo"></use>
+                            </svg>
+                          </span>
+                          <span class="overlay-bg"></span>
+                          <!-- <input type="file" pakeupload=""> -->
+                        </label>
+                      </span>
+                    </span>
                     <span class="tag tag_img"> Корова <span>
                         <label class="overlay">
                           <span class="overlay-img"></span>
@@ -261,7 +241,7 @@
                         </label>
                       </span>
                     </span>
-                    <span class="tag tag_img"> Травка зеленая <span>
+                    <span class="tag tag_img"> Ведро <span>
                         <label class="overlay">
                           <span class="overlay-img"></span>
                           <span class="overlay-svg">
@@ -287,33 +267,6 @@
                         </label>
                       </span>
                     </span>
-                  </div>
-                </div>
-              </div>
-              <div class="sidebar__block">
-                <span class="edit-block edit-block_sidebar js-edit-block">
-                  <button class="edit-block__btn js-edit-block-trigger" type="button">
-                    <svg class="icon icon-edit">
-                      <use xlink:href="img/sprite.svg#icon-edit"></use>
-                    </svg>
-                  </button>
-                </span>
-                <div class="inner sidebar__inner">
-                  <div class="sidebar__title"> Инструменты: </div>
-                  <div class="sidebar__tags">
-                    <span class="tag tag_img"> Ведро <span>
-                        <label class="overlay">
-                          <span class="overlay-img"></span>
-                          <span class="overlay-svg">
-                            <svg class="icon icon-photo">
-                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-photo"></use>
-                            </svg>
-                          </span>
-                          <span class="overlay-bg"></span>
-                          <!-- <input type="file" pakeupload=""> -->
-                        </label>
-                      </span>
-                    </span>
                     <span class="tag tag_img"> Табуретка <span>
                         <label class="overlay">
                           <span class="overlay-img"></span>
@@ -327,24 +280,84 @@
                         </label>
                       </span>
                     </span>
+                    <a href="#" class="btn btn_blue btn_sidebar">Купить набор</a>
                   </div>
                 </div>
-              </div>
-              <div class="sidebar__block">
-                <span class="edit-block edit-block_sidebar js-edit-block">
-                  <button class="edit-block__btn js-edit-block-trigger" type="button">
-                    <svg class="icon icon-edit">
-                      <use xlink:href="img/sprite.svg#icon-edit"></use>
-                    </svg>
-                  </button>
-                </span>
-                <div class="inner sidebar__inner">
-                  <div class="sidebar__tags">
-                    <span class="tag tag_wide"> Доить </span>
-                    <span class="tag tag_wide"> Ферма </span>
-                    <span class="tag tag_wide"> Корова </span>
-                    <span class="tag tag_wide"> Руки </span>
-                    <span class="tag tag_wide"> Ведро </span>
+                <div class="sidebar__links">
+                  <span href="#" class="sidebar-link">
+                    <span class="sidebar-link__left">Добавить в Избранное</span>
+                    <span class="sidebar-link__right"> 53 <span class="sidebar-link__icon">
+                        <label class="like">
+                          <input type="checkbox" tabindex="0">
+                          <svg class="icon icon-heart-outline">
+                            <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                          </svg>
+                          <svg class="icon icon-heart">
+                            <use xlink:href="img/sprite.svg#icon-heart"></use>
+                          </svg>
+                        </label>
+                      </span>
+                    </span>
+                  </span>
+                  <a href="#" class="sidebar-link">
+                    <span class="sidebar-link__left">Скачать PDF</span>
+                    <span class="sidebar-link__right"> 129 <span class="sidebar-link__icon">
+                        <svg class="icon icon-dwnld">
+                          <use xlink:href="img/sprite.svg#icon-dwnld"></use>
+                        </svg>
+                      </span>
+                    </span>
+                  </a>
+                  <a href="#" class="sidebar-link">
+                    <span class="sidebar-link__left">Распечатать</span>
+                    <span class="sidebar-link__right"> 34 <span class="sidebar-link__icon">
+                        <svg class="icon icon-prnt">
+                          <use xlink:href="img/sprite.svg#icon-prnt"></use>
+                        </svg>
+                      </span>
+                    </span>
+                  </a>
+                  <div class="sidebar-link">
+                    <span class="sidebar-link__left">Поделиться</span>
+                    <span class="sidebar-link__social">
+                      <ul class="social">
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-face">
+                              <use xlink:href="img/sprite.svg#icon-face"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-odnoklasniki">
+                              <use xlink:href="img/sprite.svg#icon-odnoklasniki"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-vk">
+                              <use xlink:href="img/sprite.svg#icon-vk"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-telegram">
+                              <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a href="#" class="social__link">
+                            <svg class="icon icon-twitter">
+                              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </span>
                   </div>
                 </div>
               </div>
