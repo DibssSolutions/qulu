@@ -1,0 +1,100 @@
+---
+title: Check
+bodyClass: is-gray
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{{ header.block({
+		static: true
+	}) }}
+
+	<div class="inner">
+		{{ mixins.steps({
+			list: [
+				{
+					class: 'is-check',
+					text: '1. Выберите категорию'
+				},
+				{
+					class: 'is-check',
+					text: '2. Общая информация'
+				},
+				{
+					class: 'is-check',
+					text: '3. Опишите шаги'
+				},
+				{
+					class: 'is-active',
+					text: '4. Проверка и публикация'
+				}
+			]
+		}) }}
+	</div>
+	<div class="wrap">
+		<form action="/">
+			<div class="article">
+				<div class="article-hero" style="background-image: url(./img/cow-hero.jpg);">
+					<div class="article-hero__head">
+						<div class="article-hero__topic">Спорт и ЗОЖ 🚴🏻</div>
+					</div>
+					<div class="article-hero__footer">
+						<h1 class="title-lg">Как подоить корову</h1>
+						<a href="#" class="author">
+							<span class="author__img" style="background-image: url(./img/avatar.jpg);"></span>
+							<span class="author__name"></span>
+						</a>
+					</div>
+				</div>
+				<div class="article__row row">
+					<div class="article__col col-md-8">
+						<div class="article__wrap">
+							<article>
+								<h3>Чтобы получить хороший объем молока и не травмировать животное, необходимо соблюдать правильную технику доения. Перед началом дойки ноги и живот коровы нужно тщательно обтереть чистой соломой или тряпкой, а хвост лучше привязать к ноге.</h3>
+								<h3><span class="block-step"></span></h3>
+								<div class="article__out">
+									<h5>Узнать, как правильно доить корову, нельзя без определенной подготовки. Дойка начинается с массажа. Его начинают с верхней части, постепенно продвигаясь к соскам.</h5>
+									<p>Непосредственно перед дойкой вымя нужно вымыть водой с хозяйственным мылом (рисунок 1). Такой раствор поможет размягчить соски, очистить их от грязи. Вода не должна быть слишком теплой, чтобы молоко не свернулось. После мытья вымя вытирают чистым сухим полотенцем. Руки тоже нужно тщательно вымыть с мылом, а при аппаратной дойке – продезинфицировать устройство.</p>
+									<div class="img-wrap">
+										<div class="img-block js-img-block">
+											<div class="img-block__overlay js-img-block-overlay"></div>
+											<button class="img-block__close js-img-block-close" type="button" contenteditable="false">закрыть</button>
+											<div class="img-block__wrap" contenteditable="false">
+												<div class="img-block__note">2. Добавьте примечание</div>
+												<div class="img-block__controls">
+													<button class="img-block__control btn-control js-edit-img" type="button">{{ mixins.icon('edit') }}</button>
+													<button class="img-block__control btn-control js-remove-img" type="button">{{ mixins.icon('remove') }}</button>
+												</div>
+												<div class="img-block__point point js-point" style="top: 40%; left: 25%;">
+													<buttton class="point__trigger js-point-trigger" type="button"></buttton>
+													<div class="point__drop js-point-drop">
+														<div class="point__input">
+															<input type="text" placeholder="Опишите, что тут важно">
+														</div>
+														<div class="point__footer">
+															<button class="point__btn js-point-remove" type="button">УДАЛИТЬ</button>
+															<button class="point__btn point__btn_blue" type="button">СОХРАНИТЬ</button>
+														</div>
+													</div>
+												</div>
+												<img src="./img/cow.jpg" alt="cow">
+											</div>
+											<div class="img-block__label">Рисунок 1. Подбираемся поближе</div>
+										</div>
+									</div>
+									<p>Такой раствор поможет размягчить соски, очистить их от грязи. Вода не должна быть слишком теплой, чтобы молоко не свернулось. После мытья вымя вытирают чистым сухим полотенцем. Руки тоже нужно тщательно вымыть с мылом, а при аппаратной дойке – продезинфицировать устройство.</p>
+								</div>
+								
+							</article>
+						</div>
+					</div>
+					<div class="article__sitebar col-md-4">
+						
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+{% endblock %}
