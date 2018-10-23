@@ -1,7 +1,27 @@
 <div class="sidebar">
-	<div class="sidebar__top"></div>
+	<div class="sidebar__top">
+		{% for item in [
+			{
+				color: "blue",
+				svg: "l",
+				text: "1 час"
+			},
+			{
+				color: "blue",
+				svg: "ruble",
+				text: "~ 450 ₽"
+			},
+			{
+				color: "blue",
+				svg: "exclamation",
+				text: "14+"
+			}
+		] %}
+			{{ mixins.infoBlock(item) }}
+		{% endfor %}
+	</div>
 	<div class="sidebar__block">
-		<div class="sidebar__edit"></div>
+		<div class="sidebar__edit">{{ mixins.icon("edit") }}</div>
 		<div class="inner sidebar__inner">
 			<div class="sidebar__title">
 				Материалы:
@@ -14,14 +34,11 @@
 				] %}
 					<span class="tag tag_img">
 						{{ item }}
-						<!-- <span data-role="remove">
-							<svg class="icon icon-close"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-close"></use></svg>
-						</span> -->
 						<span>
 							<label class="overlay">
 								<span class="overlay-img"></span>
 								<span class="overlay-svg">
-									<svg class="icon icon-star"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-star"></use></svg>
+									<svg class="icon icon-photo"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-photo"></use></svg>
 								</span>
 								<span class="overlay-bg"></span>
 								<!-- <input type="file" pakeupload=""> -->
@@ -33,7 +50,7 @@
 		</div>
 	</div>
 	<div class="sidebar__block">
-		<div class="sidebar__edit"></div>
+		<div class="sidebar__edit">{{ mixins.icon("edit") }}</div>
 		<div class="inner sidebar__inner">
 			<div class="sidebar__title">
 				Инструменты:
@@ -45,14 +62,11 @@
 				] %}
 					<span class="tag tag_img">
 						{{ item }}
-						<!-- <span data-role="remove">
-							<svg class="icon icon-close"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-close"></use></svg>
-						</span> -->
 						<span>
 							<label class="overlay">
 								<span class="overlay-img"></span>
 								<span class="overlay-svg">
-									<svg class="icon icon-star"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-star"></use></svg>
+									<svg class="icon icon-photo"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-photo"></use></svg>
 								</span>
 								<span class="overlay-bg"></span>
 								<!-- <input type="file" pakeupload=""> -->
@@ -64,7 +78,7 @@
 		</div>
 	</div>
 	<div class="sidebar__block">
-		<div class="sidebar__edit"></div>
+		<div class="sidebar__edit">{{ mixins.icon("edit") }}</div>
 		<div class="inner sidebar__inner">
 			<div class="sidebar__tags">
 				{% for item in [
@@ -76,9 +90,6 @@
 				] %}
 					<span class="tag tag_wide">
 						{{ item }}
-						<!-- <span data-role="remove">
-							<svg class="icon icon-close"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-close"></use></svg>
-						</span> -->
 					</span>
 				{% endfor %}
 			</div>

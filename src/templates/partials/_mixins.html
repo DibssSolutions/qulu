@@ -104,3 +104,10 @@
 	</label>
 	<!-- end categ -->
 {% endmacro %}
+
+{% macro infoBlock(props) %}
+	<div class="info-block">
+		<div class="info-block__icon{% if props.color %} info-block__icon_{{ props.color }}{% endif %}">{{ icon(props.svg) }}</div>
+		<div class="info-block__text">{{ props.text }}</div>
+	</div>
+{% endmacro %}

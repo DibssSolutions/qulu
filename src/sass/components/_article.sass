@@ -1,3 +1,68 @@
 .article
-    &__aside
-    &__sidebar
+	&__aside
+	&__sidebar
+
+.article-hero
+	position: relative
+	padding: 40px 60px
+	min-height: 430px
+	border-radius: 4px
+	border: 1px solid $gallery
+	display: flex
+	flex-direction: column
+	height: 100%
+	z-index: 1
+	&:before
+		content: ""
+		position: absolute
+		left: 0
+		top: 0
+		bottom: 0
+		right: 0
+		background-color: rgba($black,.25)
+		z-index: -1
+	&_lg
+		padding: 110px 80px 33px
+	&__head
+		flex: 1 0 auto
+	&__footer
+		flex: 0 0 auto
+		&-wrap
+	&__topic
+		color: $white
+
+.author
+	display: flex
+	align-items: center
+	margin-top: 12px
+	&__img
+		+circle(44)
+	&__name
+		margin-left: 12px
+		font-family: $walsheim
+		color: $white
+		font-size: 18px
+		line-height: 1
+		font-weight: 500
+
+.info-block
+	display: flex
+	align-items: center
+	&:not(:first-child)
+		margin-left: 52px
+	&__icon
+		font-size: 11px
+		display: flex
+		align-items: center
+		justify-content: center
+		+circle(22)
+		.icon
+			display: block
+		&_blue
+			background-color: $blue
+			color: $white
+	&__text
+		font-size: 14px
+		&:not(:first-child)
+			margin-left: 8px
+
