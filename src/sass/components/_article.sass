@@ -9,8 +9,12 @@
 	h3
 		&:not(:first-child)
 			margin-top: 90px 
+			+md
+				margin-top: 45px
 		&:not(:last-child)
 			margin-bottom: 40px 
+			+md
+				margin-bottom: 20px
 	h5
 		font-family: $roboto 
 		font-size: 16px
@@ -36,11 +40,15 @@
 				visibility: visible
 	&__wrap
 		padding-left: 94px
+		+lg
+			padding-left: 0
 		
 .block-step
 	padding-right: 5px
 	min-width: 94px
 	display: inline-block
+	+sm
+		min-width: 0
 
 .article
 	&__row
@@ -48,6 +56,8 @@
 			margin-top: 30px
 	&__field
 		padding: 40px 75px 60px 60px
+		+md
+			padding: 19px 30px 40px
 	&__footer
 		margin-top: 40px 
 	&__confirm
@@ -319,6 +329,14 @@
 	opacity: 0
 	visibility: hidden
 	transition: opacity .3s, visibility .3s
+	+lg
+		left: -60px
+	+md
+		left: -30px
+		right: -30px
+	+sm
+		left: -15px
+		right: -15px
 	&:after
 		position: absolute
 		content: "" 
@@ -338,7 +356,12 @@
 		color: rgba($emperor, .5) 
 		transition: color .3s
 		background-color: transparent 
+		+sm
+			top: 10px
+			transform: translateY(0)
 		+hover
 			color: $emperor
 		.icon
 			font-size: 27px
+			+sm
+				font-size: 15px
