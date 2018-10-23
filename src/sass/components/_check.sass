@@ -8,10 +8,12 @@
 .sidebar
 	background-color: $white
 	border: 1px solid $gallery
-	&_noborder
+	&_public
 		border: none
 		.sidebar__block
 			border: none
+		.sidebar__inner
+			padding: 0
 	+md
 		margin-bottom: 30px
 	&__top
@@ -92,6 +94,8 @@
 		display: inline-block
 		&:not(:first-child)
 			margin-left: 24px
+			+sm
+				margin-left: 10px
 	&__link
 		color: rgba($emperor,.7)
 		font-size: 18px
