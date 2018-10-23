@@ -203,28 +203,7 @@
 	content: attr(placeholder)
 	color: rgba(#555, .5) 
 	display: block
-.article-field
-	padding: 19px 30px 40px
-	background-color: $white 
-	min-height: 340px
-	+sm
-		padding: 15px
-		min-height: 150px
-	h4
-		font-family: $roboto 
-	p, ol, ul
-		&:not(:first-child)
-			margin-top: 20px
-	ol, ul
-		padding-left: 25px 
-		li
-			padding-left: 10px
-			&:not(:first-child)
-				margin-top: 20px
-	ol
-		list-style-type: decimal
-	ul
-		list-style-type: disc 
+
 
 .form-info
 	position: absolute
@@ -370,6 +349,9 @@
 .point
 	position: absolute
 	z-index: 1
+	&_show
+		opacity: 1
+		visibility: visible
 	&__trigger
 		width: 24px
 		height: 24px
@@ -564,3 +546,37 @@
 			box-shadow: none
 		.inner
 			padding: 0
+
+.edit-block
+	position: absolute
+	top: -20px
+	left: -155px
+	right: -75px
+	bottom: -20px
+	list-style-type: none
+	opacity: 0
+	visibility: hidden
+	transition: opacity .3s, visibility .3s
+	&:after
+		position: absolute
+		content: "" 
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		z-index: -1
+		background-color: rgba(#BDBDBD, .08) 
+	&:before
+		display: none
+	&__btn
+		position: absolute
+		top: 50%
+		right: 10px
+		transform: translateY(-50%)
+		color: rgba($emperor, .5) 
+		transition: color .3s
+		background-color: transparent 
+		+hover
+			color: $emperor
+		.icon
+			font-size: 27px

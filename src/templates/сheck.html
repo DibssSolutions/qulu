@@ -50,44 +50,128 @@ bodyClass: is-gray
 					</div>
 					<div class="article__row row">
 						<div class="article__aside col-md-8">
-							<div class="article__wrap">
-								<article>
-									<h3>Чтобы получить хороший объем молока и не травмировать животное, необходимо соблюдать правильную технику доения. Перед началом дойки ноги и живот коровы нужно тщательно обтереть чистой соломой или тряпкой, а хвост лучше привязать к ноге.</h3>
-									<h3><span class="block-step"></span></h3>
-									<div class="article__out">
-										<h5>Узнать, как правильно доить корову, нельзя без определенной подготовки. Дойка начинается с массажа. Его начинают с верхней части, постепенно продвигаясь к соскам.</h5>
-										<p>Непосредственно перед дойкой вымя нужно вымыть водой с хозяйственным мылом (рисунок 1). Такой раствор поможет размягчить соски, очистить их от грязи. Вода не должна быть слишком теплой, чтобы молоко не свернулось. После мытья вымя вытирают чистым сухим полотенцем. Руки тоже нужно тщательно вымыть с мылом, а при аппаратной дойке – продезинфицировать устройство.</p>
-										<div class="img-wrap">
-											<div class="img-block js-img-block">
-												<div class="img-block__overlay js-img-block-overlay"></div>
-												<button class="img-block__close js-img-block-close" type="button" contenteditable="false">закрыть</button>
-												<div class="img-block__wrap" contenteditable="false">
-													<div class="img-block__note">2. Добавьте примечание</div>
-													<div class="img-block__controls">
-														<button class="img-block__control btn-control js-edit-img" type="button">{{ mixins.icon('edit') }}</button>
-														<button class="img-block__control btn-control js-remove-img" type="button">{{ mixins.icon('remove') }}</button>
-													</div>
-													<div class="img-block__point point js-point" style="top: 40%; left: 25%;">
-														<buttton class="point__trigger js-point-trigger" type="button"></buttton>
-														<div class="point__drop js-point-drop">
-															<div class="point__input">
-																<input type="text" placeholder="Опишите, что тут важно">
-															</div>
-															<div class="point__footer">
-																<button class="point__btn js-point-remove" type="button">УДАЛИТЬ</button>
-																<button class="point__btn point__btn_blue" type="button">СОХРАНИТЬ</button>
-															</div>
+							<article class="article__field article-field">
+								<h3>Чтобы получить хороший объем молока и не травмировать животное, необходимо соблюдать правильную технику доения. Перед началом дойки ноги и живот коровы нужно тщательно обтереть чистой соломой или тряпкой, а хвост лучше привязать к ноге.</h3>
+								<h3><span class="block-step">Шаг 1.</span>Подготовка</h3>
+								<div class="article-field__wrap">
+									<h5>
+										<span class="edit-block js-edit-block">
+											<button class="edit-block__btn js-edit-block-trigger" type="button">{{ mixins.icon('edit') }}</button>
+										</span>
+										Узнать, как правильно доить корову, нельзя без определенной подготовки. Дойка начинается с массажа. Его начинают с верхней части, постепенно продвигаясь к соскам.
+									</h5>
+									<p>
+										<span class="edit-block js-edit-block">
+											<button class="edit-block__btn js-edit-block-trigger" type="button">{{ mixins.icon('edit') }}</button>
+										</span>
+										Непосредственно перед дойкой вымя нужно вымыть водой с хозяйственным мылом (рисунок 1). Такой раствор поможет размягчить соски, очистить их от грязи. Вода не должна быть слишком теплой, чтобы молоко не свернулось. После мытья вымя вытирают чистым сухим полотенцем. Руки тоже нужно тщательно вымыть с мылом, а при аппаратной дойке – продезинфицировать устройство.
+									</p>
+									<div class="img-wrap">
+										<div class="img-block js-img-block">
+											<div class="img-block__wrap">
+												<div class="img-block__point point point_show js-point" style="top: 40%; left: 25%;">
+													<buttton class="point__trigger js-point-trigger" type="button"></buttton>
+													<div class="point__drop js-point-drop">
+														<div class="point__input">
+															<input type="text" placeholder="Опишите, что тут важно">
+														</div>
+														<div class="point__footer">
+															<button class="point__btn js-point-remove" type="button">УДАЛИТЬ</button>
+															<button class="point__btn point__btn_blue" type="button">СОХРАНИТЬ</button>
 														</div>
 													</div>
-													<img src="./img/cow.jpg" alt="cow">
 												</div>
-												<div class="img-block__label">Рисунок 1. Подбираемся поближе</div>
+												<img src="./img/cow.jpg" alt="cow">
+											</div>
+											<div class="img-block__label">Рисунок 1. Подбираемся поближе</div>
+										</div>
+									</div>
+									<p>
+										<span class="edit-block js-edit-block">
+											<button class="edit-block__btn js-edit-block-trigger" type="button">{{ mixins.icon('edit') }}</button>
+										</span>
+										Такой раствор поможет размягчить соски, очистить их от грязи. Вода не должна быть слишком теплой, чтобы молоко не свернулось. После мытья вымя вытирают чистым сухим полотенцем. Руки тоже нужно тщательно вымыть с мылом, а при аппаратной дойке – продезинфицировать устройство.
+									</p>
+								</div>
+								<h3><span class="block-step">Шаг 2.</span>Техника доения</h3>
+								<div class="article-field__wrap">
+									<h5>
+										<span class="edit-block js-edit-block">
+											<button class="edit-block__btn js-edit-block-trigger" type="button">{{ mixins.icon('edit') }}</button>
+										</span>
+										Чтобы узнать, как правильно доить корову руками, нужно сделать следующее:
+									</h5>
+									<ol>
+										<li>Правильно захватить сосок можно так: расположить все пальцы на соске, чтобы указательный находился под большим, а мизинец – с наружной части соска;</li>
+										<li>Сжимая кулак, необходимо следить, чтобы сосок не кривился, а льющееся молоко не должно контактировать с руками;</li>
+										<li>Чтобы молоко лилось из соска струей, сжимают не все пальцы сразу, а сверху вниз: сначала большой и указательный, постепенно спускаясь к мизинцу. Такая техника улучшает приток молока.</li>
+										<li>После этого кулак разжимают, но пальцы с соска не убирают.</li>
+										<li>Когда начинается сжатие безымянного пальца и мизинца, остальные пальцы следует сжать, чтобы молоко не пошло вверх. Далее алгоритм действий повторяется.</li>
+										<li class="edit-block js-edit-block">
+											<button class="edit-block__btn js-edit-block-trigger" type="button">{{ mixins.icon('edit') }}</button>
+										</li>
+									</ol>
+									<div class="video"><iframe src="https://www.youtube.com/embed/Q0oIoR9mLwc?ecver=2" width="100%" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+									<p>
+										<span class="edit-block js-edit-block">
+											<button class="edit-block__btn js-edit-block-trigger" type="button">{{ mixins.icon('edit') }}</button>
+										</span>
+										Лучше доить сначала два передних соска, а затем два задних, так как выдавливание молок сначала из правой, а затем из левой доли может привести к недостаточному удалению молока из задней части. Это объясняется тем, что одна часть вымени будет доиться более сильной (правой) рукой, а другая – более слабой.
+									</p>
+									<div class="img-wrap">
+										<div class="img-wrap__row row">
+											<div class="img-wrap__col col-md-6">
+												<div class="img-block js-img-block">
+													<div class="img-block__wrap">
+														<div class="img-block__point point point_show js-point" style="top: 40%; left: 25%;">
+															<buttton class="point__trigger js-point-trigger" type="button"></buttton>
+															<div class="point__drop js-point-drop">
+																<div class="point__input">
+																	<input type="text" placeholder="Опишите, что тут важно">
+																</div>
+																<div class="point__footer">
+																	<button class="point__btn js-point-remove" type="button">УДАЛИТЬ</button>
+																	<button class="point__btn point__btn_blue" type="button">СОХРАНИТЬ</button>
+																</div>
+															</div>
+														</div>
+														<img src="./img/cow.jpg" alt="cow">
+													</div>
+													<div class="img-block__label">Рисунок 2. Доение с аппаратом</div>
+												</div>
+											</div>
+											<div class="img-wrap__col col-md-6">
+												<div class="img-block js-img-block">
+													<div class="img-block__wrap">
+														<div class="img-block__point point point_show js-point" style="top: 40%; left: 25%;">
+															<buttton class="point__trigger js-point-trigger" type="button"></buttton>
+															<div class="point__drop js-point-drop">
+																<div class="point__input">
+																	<input type="text" placeholder="Опишите, что тут важно">
+																</div>
+																<div class="point__footer">
+																	<button class="point__btn js-point-remove" type="button">УДАЛИТЬ</button>
+																	<button class="point__btn point__btn_blue" type="button">СОХРАНИТЬ</button>
+																</div>
+															</div>
+														</div>
+														<img src="./img/cow.jpg" alt="cow">
+													</div>
+													<div class="img-block__label">Рис 3. описание</div>
+												</div>
 											</div>
 										</div>
-										<p>Такой раствор поможет размягчить соски, очистить их от грязи. Вода не должна быть слишком теплой, чтобы молоко не свернулось. После мытья вымя вытирают чистым сухим полотенцем. Руки тоже нужно тщательно вымыть с мылом, а при аппаратной дойке – продезинфицировать устройство.</p>
 									</div>
-									
-								</article>
+									<p>
+										<span class="edit-block js-edit-block">
+											<button class="edit-block__btn js-edit-block-trigger" type="button">{{ mixins.icon('edit') }}</button>
+										</span>
+										Лучше доить сначала два передних соска, а затем два задних, так как выдавливание молок сначала из правой, а затем из левой доли может привести к недостаточному удалению молока из задней части. Это объясняется тем, что одна часть вымени будет доиться более сильной (правой) рукой, а другая – более слабой.
+									</p>
+								</div>
+							</article>
+							<div class="article__footer">
+								<button class="btn btn_wide btn_white btn_bord-sm" type="submit">добавить шаг</button>
 							</div>
 						</div>
 						<div class="article__sidebar col-md-4">
