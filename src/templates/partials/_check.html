@@ -21,7 +21,13 @@
 		{% endfor %}
 	</div>
 	<div class="sidebar__block">
-		<div class="sidebar__edit">{{ mixins.icon("edit") }}</div>
+		<span class="edit-block edit-block_sidebar js-edit-block">
+			<button class="edit-block__btn js-edit-block-trigger" type="button">
+				<svg class="icon icon-edit">
+					<use xlink:href="img/sprite.svg#icon-edit"></use>
+				</svg>
+			</button>
+		</span>
 		<div class="inner sidebar__inner">
 			<div class="sidebar__title">
 				Материалы:
@@ -50,7 +56,13 @@
 		</div>
 	</div>
 	<div class="sidebar__block">
-		<div class="sidebar__edit">{{ mixins.icon("edit") }}</div>
+		<span class="edit-block edit-block_sidebar js-edit-block">
+			<button class="edit-block__btn js-edit-block-trigger" type="button">
+				<svg class="icon icon-edit">
+					<use xlink:href="img/sprite.svg#icon-edit"></use>
+				</svg>
+			</button>
+		</span>
 		<div class="inner sidebar__inner">
 			<div class="sidebar__title">
 				Инструменты:
@@ -78,7 +90,7 @@
 		</div>
 	</div>
 	<div class="sidebar__block">
-		<span class="edit-block js-edit-block">
+		<span class="edit-block edit-block_sidebar js-edit-block">
 			<button class="edit-block__btn js-edit-block-trigger" type="button">
 				<svg class="icon icon-edit">
 					<use xlink:href="img/sprite.svg#icon-edit"></use>
