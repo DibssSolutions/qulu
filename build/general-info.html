@@ -81,8 +81,8 @@
       <div class="inner">
         <!-- begin steps -->
         <ul class="steps">
-          <li class="steps__item is-active"><span class="steps__text">1. Выберите категорию</span></li>
-          <li class="steps__item"><span class="steps__text">2. Общая информация</span></li>
+          <li class="steps__item"><span class="steps__text">1. Выберите категорию</span></li>
+          <li class="steps__item is-active"><span class="steps__text">2. Общая информация</span></li>
           <li class="steps__item"><span class="steps__text">3. Опишите шаги</span></li>
           <li class="steps__item"><span class="steps__text">4. Проверка и публикация</span></li>
         </ul>
@@ -96,7 +96,7 @@
               <input type="text" class="input input_lg" placeholder="Название Инструкции">
             </div>
             <div class="general-form__control form-control">
-              <label class="form-control__label">обложка</label>
+              <label class="form-control__label form-control__label_top">обложка</label>
               <div class="cover">
                 <label class="cover__label">
                   <input type="file">
@@ -105,17 +105,17 @@
                   <span class="cover__placeholder">обложка (перетащите сюда фото или видео)</span>
                 </label>
                 <div class="cover__btn-wrap">
-                  <div class="cover__btn">
-                    <button class="btn btn_sm btn_bord-white cover__btn" type="button">удалить обложку</button>
-                  </div>
-                  <div class="cover__btn">
-                    <button class="btn btn_sm btn_bord-white cover__btn" type="button">выбрать другой файл</button>
-                  </div>
+                  <!-- <div class="cover__btn"> -->
+                  <button class="btn btn_sm btn_bord-white cover__btn" type="button">удалить обложку</button>
+                  <!-- </div> -->
+                  <!-- <div class="cover__btn"> -->
+                  <button class="btn btn_sm btn_bord-white cover__btn" type="button">выбрать другой файл</button>
+                  <!-- </div> -->
                 </div>
               </div>
             </div>
             <div class="general-form__control form-control">
-              <label class="form-control__label">описание</label>
+              <label class="form-control__label form-control__label_top">описание</label>
               <textarea class="input textarea general-form__textarea" placeholder="Описание (кратко)"></textarea>
             </div>
             <div class="general-form__control form-control">
@@ -131,12 +131,12 @@
               <input type="text" data-role="tagsinput-img" placeholder="Инструменты (опционально)">
             </div>
             <div class="general-form__row">
-              <div class="general-form__col">
+              <div class="general-form__col col-md-6 col-sm-12">
                 <div class="form-control">
                   <input type="text" class="input" placeholder="Финансовые затраты, &#8381">
                 </div>
               </div>
-              <div class="general-form__col">
+              <div class="general-form__col col-md-6 col-sm-12">
                 <div class="form-control">
                   <input type="text" class="input" placeholder="Затраты по времени, ч">
                 </div>
@@ -145,9 +145,9 @@
             <div class="general-form__control form-control">
               <div class="general-form__wrap">
                 <!-- begin input -->
-                <label class="checkbox">
+                <label class=" radio">
                   <input type="checkbox" class="js-age-limit" name="checkbox">
-                  <span class="checkbox__text">Возрастное ограничение:</span>
+                  <span class="radio__text">Возрастное ограничение:</span>
                 </label>
                 <!-- end input -->
                 <div class="general-form__select js-age-limit-select">

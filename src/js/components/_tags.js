@@ -141,6 +141,20 @@ const citynames = new Bloodhound({
     }
   }
 });
+$('[data-role="tagsinput"]').on('itemAddedOnInit', function(event) {
+  const parent = $(this).parent();
+  let tags = parent.find('.tag');
+  if (tags.length) {
+    parent.find('.bootstrap-tagsinput').addClass('is-filled');
+  };
+});
+$('[data-role="tagsinput-img"]').on('itemAddedOnInit', function(event) {
+  const parent = $(this).parent();
+  let tags = parent.find('.tag');
+  if (tags.length) {
+    parent.find('.bootstrap-tagsinput').addClass('is-filled');
+  };
+});
 citynames.initialize();
 $('[data-role="tagsinput"]').tagsinput({
   typeaheadjs: {
@@ -172,6 +186,7 @@ $('[data-role="tagsinput"]').on('itemRemoved', function(event) {
     parent.find('.bootstrap-tagsinput').removeClass('is-filled');
   };
 });
+
 
 $('[data-role="tagsinput-img"]').on('itemRemoved', function(event) {
   const parent = $(this).parent();
