@@ -92,7 +92,7 @@ $.fn.tagsinput.Constructor.prototype.add = function(item, dontPushVal, options) 
 
   // add a tag element
 
-  var $tag = $('<span class="tag ' + htmlEncode(tagClass) + (itemTitle !== null ? ('" title="' + itemTitle) : '') + '">' + htmlEncode(itemText) + '<span data-role="remove">' + buildIcon('close') + '</span><span><label class="overlay"><span class="overlay-img"></span><span class="overlay-svg">' + buildIcon('star') + '</span><span class="overlay-bg"></span><input type="file" pakeUpload></label></span></span>');
+  var $tag = $('<span class="tag ' + htmlEncode(tagClass) + (itemTitle !== null ? ('" title="' + itemTitle) : '') + '">' + htmlEncode(itemText) + '<span data-role="remove">' + buildIcon('close') + '</span><span><label class="overlay"><span class="overlay-img"></span><span class="overlay-svg">' + buildIcon('photo') + '</span><span class="overlay-bg"></span><input type="file" pakeUpload></label></span></span>');
   $tag.data('item', item);
   self.findInputWrapper().before($tag);
   $tag.after(' ');

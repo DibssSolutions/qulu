@@ -8,17 +8,21 @@
 .sidebar
 	background-color: $white
 	border: 1px solid $gallery
+	&__top
+		padding: 20px
+		display: flex
 	&__edit
 		position: absolute
 		top: 50%
 		transform: translateY(-50%)
 		right: 10px
 		width: 22px
-		height: 21px
-		background-color: #555
+		height: 22px
+		// background-color: #555
 		opacity: 0
 		visibility: hidden
 		transition: opacity .3s, visibility .3s
+		color: rgba($emperor,.5)
 	&__block
 		position: relative
 		padding: 16px 0 20px
