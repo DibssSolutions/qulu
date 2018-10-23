@@ -86,8 +86,11 @@
 	background-size: cover
 	background-position: center
 	background-repeat: no-repeat
+	+md
+		padding: 30px 30px
 	+sm
-		padding: 40px 15px
+		padding: 15px 15px
+		min-height: 300px
 	&:before
 		content: ""
 		position: absolute
@@ -376,6 +379,14 @@
 		left: 0
 		right: 0
 		bottom: 0
+		+lg
+			left: 0
+		+md
+			left: 0
+			right: 0
+		+sm
+			left: 0
+			right: 0
 		.icon
 			font-size: 21px
 	&__btn
