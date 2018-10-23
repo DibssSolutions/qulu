@@ -191,6 +191,8 @@
 		color: $boulder
 		+sm
 			font-size: 26px
+			height: 70px
+			padding: 20px 16px
 		+xs
 			font-size: 20px
 		
@@ -198,10 +200,6 @@
 	height: 172px
 	resize: none
 	box-shadow: 0 6px 8px 0 rgba($black,.1)
-
-.checkbox
-	&__text
-
 
 .form-info
 	position: absolute
@@ -285,6 +283,22 @@
 				visibility: visible
 			&:before
 				border-color: $blue
+
+.checkbox
+	position: relative
+	user-select: none
+	cursor: pointer
+	vertical-align: top
+	display: inline-block
+	input
+		position: absolute
+		opacity: 0
+	&__text
+		&:before
+			position: absolute
+			content: "" 
+			top: 0
+			left: 0
 
 .select
 	background-color: $white
