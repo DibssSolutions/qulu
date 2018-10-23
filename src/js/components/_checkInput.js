@@ -1,13 +1,18 @@
-const checkInputValue = () => {
-  const field = $('input, textarea');
-  field.on('keyup', function() {
-  	const that = $(this);
-    const value = $(this).val();
-    const classFilled = 'is-filled';
-    if (value) {
-      that.addClass(classFilled);
-    } else {
-      that.removeClass(classFilled);
+
+const checkInputValue = (field, event) => {
+  const currentEvent = event || 'keyup';
+  field.on(currentEvent, function() {
+    if (!field.hasClass('no-remove')) {
+  	const that = $(this).parents('.form-control');
+      const value = $(this).val();
+      const classFilled = 'is-filled';
+      if (value) {
+        that.addClass(classFilled);
+      } else {
+        that.removeClass(classFilled);
+      }
     }
   });
 };
+const field = $('input, textarea');
+checkInputValue(field);

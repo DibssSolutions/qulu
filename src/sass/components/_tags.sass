@@ -6,6 +6,13 @@
 	display: flex
 	align-items: center
 	flex-wrap: wrap
+	&.is-filled
+		padding: 4px 16px 9px
+		.tt-input
+			+placeholder
+				font-size: 0
+		.twitter-typeahead
+			width: 80px
 .twitter-typeahead
 	width: 100%
 	line-height: 1
@@ -55,13 +62,6 @@
 	&:focus
 		+placeholder
 			font-size: 0
-.is-filled
-	padding: 4px 16px 9px
-	.tt-input
-		+placeholder
-			font-size: 0
-	.twitter-typeahead
-		width: 80px
 
 .overlay
 	display: none
