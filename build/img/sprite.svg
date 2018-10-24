@@ -86,11 +86,16 @@
         Path 2
     </title>
     <path d="M2 0H0v10.112h5.893v-2H2z" fill-rule="nonzero"/>
-</symbol><symbol id="icon-login-arrow" viewBox="0 0 24 6">
+</symbol><symbol id="icon-login-arrow" viewBox="0 0 23.3 5.6">
+    <style>
+        .st0{fill:#fff}
+    </style>
     <title>
         Rectangle 6
     </title>
-    <path d="M23.78 5.607H.71a8 8 0 0 0 5.63-2.316L8 1.646a5.684 5.684 0 0 1 8 0l1.662 1.645a8 8 0 0 0 5.63 2.316z" fill-rule="evenodd"/>
+    <g id="Page-1">
+        <path id="Rectangle-6" class="st0" d="M23.2 5.6H.1c2.1 0 4.1-.8 5.6-2.3l1.7-1.6c2.2-2.2 5.8-2.2 8 0L17 3.3c1.5 1.5 3.5 2.3 5.6 2.3h.6z"/>
+    </g>
 </symbol><symbol id="icon-odnoklasniki" viewBox="0 0 11 18">
     <title>
         Combined Shape

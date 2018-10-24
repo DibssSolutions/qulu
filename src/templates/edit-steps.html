@@ -45,6 +45,20 @@ bodyClass: is-gray
 						<div class="article-field" contenteditable="true" placeholder="Начните писать...">
 							<h5>Узнать, как правильно доить корову, нельзя без определенной подготовки. Дойка начинается с массажа. Его начинают с верхней части, постепенно продвигаясь к соскам.</h5>
 							<p>Непосредственно перед дойкой вымя нужно вымыть водой с хозяйственным мылом (рисунок 1). Такой раствор поможет размягчить соски, очистить их от грязи. Вода не должна быть слишком теплой, чтобы молоко не свернулось. После мытья вымя вытирают чистым сухим полотенцем. Руки тоже нужно тщательно вымыть с мылом, а при аппаратной дойке – продезинфицировать устройство.</p>
+							<div class="edit-buttons" style="top: 60px; left: 370px;">
+								{% for item in [
+									{svg: "check", active: true},
+									{svg: "check"},
+									{svg: "check"}
+								] %}
+									<button type="button" class="edit-buttons__btn{% if item.active %} is-active{% endif %}">
+										{{ mixins.icon(item.svg) }}
+									</button>
+								{% endfor %}
+								<div class="edit-buttons__arrow">
+									{{ mixins.icon("login-arrow") }}
+								</div>
+							</div>
 							<div class="img-wrap">
 								<div class="img-block js-img-block">
 									<div class="img-block__overlay js-img-block-overlay"></div>
@@ -88,6 +102,17 @@ bodyClass: is-gray
 					<div class="form-control">
 						<div class="form-info" style="top: 820px; left: 100%;">Нажмите, чтобы выбрать фото. Выберите несколько файлов, чтобы добавить фотогалерею</div>
 						<div class="article-field" contenteditable="true" placeholder="Начните писать...">
+							<div class="paste-buttons" style="top: 90%">
+								{% for item in [
+									{svg: "check", active: true},
+									{svg: "check"},
+									{svg: "check"}
+								] %}
+									<button type="button" class="paste-buttons__btn">
+										{{ mixins.icon(item.svg) }}
+									</button>
+								{% endfor %}
+							</div>
 							<h5>Чтобы узнать, как правильно доить корову руками, нужно сделать следующее:</h5>
 							<ol>
 								<li>Правильно захватить сосок можно так: расположить все пальцы на соске, чтобы указательный находился под большим, а мизинец – с наружной части соска;</li>
