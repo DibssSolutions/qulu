@@ -1,6 +1,6 @@
 
 const checkValue = (elem) => {
-  if (!$(this).hasClass('no-remove')) {
+  if (!elem.hasClass('no-remove')) {
     const that = elem.parents('.form-control');
     const value = elem.val();
     const classFilled = 'is-filled';
