@@ -25,6 +25,11 @@
         <path d="M5 15h5v5H5z"/>
         <path d="M10 10h5v5h-5z"/>
     </g>
+</symbol><symbol id="icon-bottom-arrow" viewBox="0 0 24 6">
+    <title>
+        login-arrow
+    </title>
+    <path d="M23.835 5.607c.015.202.015.303 0 .303-5.113 0-12.867.047-23.126-.153-.015 0-.015-.05 0-.15a8 8 0 0 0 5.63-2.316L8 1.646a5.684 5.684 0 0 1 8 0l1.662 1.645a7.98 7.98 0 0 0 5.62 2.316h.553z" fill-rule="nonzero"/>
 </symbol><symbol id="icon-check" viewBox="0 0 17 13">
     <title>
         Group
